@@ -21,10 +21,9 @@ export default function Home() {
             COMENZAR
           </button>  
         </div>
-        <Image
-          className = 'ml-2 w-[40vh] h-[40vh] rounded-full'
-          src={Cruz}
-          alt = 'Imagen de cruz roja'/>
+        <div className='flex justify-center items-center'>
+          <Image className='bg-white rounded-full' src={Cruz} width={'19%'} height={'auto'} alt="" />
+        </div>
       </div>
     </div>
   )
