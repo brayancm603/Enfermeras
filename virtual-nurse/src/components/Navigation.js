@@ -24,8 +24,12 @@ const Navbar = () => {
       <Link href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
         Sobre nosotros
       </Link>
+    </div>  
+    <div>
+    <button type="button" class="text-black bg-green-300 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green-200 dark:hover:bg-green-300 dark:focus:ring-green-500">
+      Iniciar Sesion 
+    </button>
     </div>
- 
   </div>
 </nav>
   );
