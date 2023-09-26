@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
+
+<h1>Postulaciones pendientes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Titulos Profesionales
+            </th>
+            <th>
+                Certificaciones
+            </th>
+            <th>
+                Experiencia Laboral
+            </th>
+
+            <th>
+                Direccion
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfessionalTitles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Certification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExperience)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+
+            <td>
+                    <a asp-action="ViewPostulation" asp-route-id="@item.IdPostulation">Ver</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<br />
+<br />

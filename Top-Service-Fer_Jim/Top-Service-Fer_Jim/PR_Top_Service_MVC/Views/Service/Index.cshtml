@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Servicios</h1>
+
+<a asp-controller="PagoQr" asp-action="Index">QR Pagar Servicio</a>|
+
+<table class="table">
+    <thead>
+        <tr>
+           <th>
+               Profesional Encargado
+            </th>
+            <th>
+               Descripcion del problema
+            </th>
+            <th>
+                Fecha para el servicio
+            </th>
+           
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProfessionalNavigation.IdProfesionalNavigation.Name)
+                @Html.DisplayFor(modelItem => item.IdProfessionalNavigation.IdProfesionalNavigation.LastName)
+                @Html.DisplayFor(modelItem => item.IdProfessionalNavigation.IdProfesionalNavigation.SecondLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+           
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdService">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdService">Eliminar</a>|
+              
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

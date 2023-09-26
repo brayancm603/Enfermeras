@@ -1,0 +1,69 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Quotation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Solicitudes de Cotizacion Pendientes</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre 
+            </th>
+             <th>
+                Apellido Paterno
+            </th>
+             <th>
+                Apellido Materno
+            </th>
+            <th>
+               Ubicacion
+            </th>
+            <th>
+                Fecha de solicitud
+            </th>
+            
+            <th>
+                Descripcion del problema
+            </th>
+            
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.SecondLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            
+            
+            <td>
+                <a asp-action="Accept" asp-route-id="@item.IdQuotation">Aceptar</a> |
+                <a asp-action="Reject" asp-route-id="@item.IdQuotation">Rechazar</a> |
+               
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
