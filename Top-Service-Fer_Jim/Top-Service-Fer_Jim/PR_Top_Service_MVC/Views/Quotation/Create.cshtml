@@ -1,0 +1,40 @@
+﻿@model PR_Top_Service_MVC.Models.Quotation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Solicitar Cotizacion</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label > Ingrese la fecha que requiere para la cotizacion</label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+          
+            <div class="form-group">
+                <label >Ingrese una breve descripcion de su problema</label>
+                <textarea asp-for="Description" class="form-control" /></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" value="1"/>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

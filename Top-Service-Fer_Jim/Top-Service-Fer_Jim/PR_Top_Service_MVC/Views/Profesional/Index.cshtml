@@ -1,0 +1,39 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Profesional>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Profesionales</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+          
+            <th>
+               Fecha de Nacimiento;
+            </th>
+          
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthdate)
+            </td>
+           
+          
+            <td>
+                <a asp-controller="ServiceReceipt" asp-action="Create" asp-route-id="@item.IdProfesional">Nuevo Servicio</a>
+                |
+                <a asp-controller="Quotation" asp-action="Create" asp-route-id="@item.IdProfesional">Solicitar Cotizacion</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

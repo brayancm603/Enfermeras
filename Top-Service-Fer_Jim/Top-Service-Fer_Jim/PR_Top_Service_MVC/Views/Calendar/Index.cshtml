@@ -1,0 +1,26 @@
+﻿@model List<Service>
+
+<br />
+<h1 class="text-uppercase">Fechas pendientes de servicios activos</h1>
+<br />
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+        <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+        <h2 class="card-title">@item.Date</h2>
+        <p class="card-text">Direccion: @item.Description</p>
+        @if (item.Status_Service==null)
+                    {
+                        <p class="card-text">Estado: Empezar</p>
+                    }else {
+                        <p class="card-text">Estado: Terminar</p>
+                    }   
+        
+        <a asp-action="Index" asp-controller="ServiceProfesional" asp-route-id="@item.IdService"  class="btn btn-primary">Atender</a>
+        </div>
+        </div>
+        </div>
+    }
+</div>

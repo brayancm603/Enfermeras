@@ -1,0 +1,26 @@
+﻿@model PR_Top_Service_MVC.Models.User
+
+<br />
+<br />
+<div class="container-fluid vh-80 d-flex justify-content-center align-items-center">
+    <div class="card text-center " style="width: 400px;">
+    <div class="card-header h5 text-white bg-primary">Password Reset</div>
+    <div class="card-body px-5">
+        <p class="card-text py-2">
+            Ingrese su dirección de correo electrónico y le enviaremos un correo electrónico con su contraseña temporal.
+        </p>
+        <form asp-action="SendMail">
+            <div class="form-outline">
+                <input type="email" id="typeEmail" class="form-control my-3" required="" asp-for="Email" />
+                
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Resetear Contraseña</button>
+        </form>
+        <div class="d-flex justify-content-between mt-4">
+            <a class="" asp-controller="Login" asp-action="Index">Login</a>
+            <a class="" href="#">Register</a>
+        </div>
+    </div>
+</div>
+</div>
+
