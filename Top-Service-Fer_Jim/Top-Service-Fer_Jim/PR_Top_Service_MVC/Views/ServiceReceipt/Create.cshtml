@@ -1,0 +1,162 @@
+﻿@model PR_Top_Service_MVC.Models.ServiceReceipt
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Registro de servicios</h1>
+
+<h4></h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+           
+
+            <div class="form-group">
+                <label >Seleccion el carnet del cliente al que corresponde este servicio</label>
+                <select asp-for="IdCostumer" class="form-control" asp-items="ViewBag.IdCostumer"></select>
+            </div>
+            
+            <div class="form-group">
+                <label >Ingrese  una descripcion del problema </label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label >Ingrese la fecha en la que inicia el servicio</label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            
+
+
+            <div>
+                 <h2>Datos para el recibo</h2>
+
+            <div class="d-flex">
+                <div class="p-2">
+                    <h3>Materiales</h3>
+                    <ul id="miLista"></ul>
+                </div>
+                <div class="p-2">
+                    <h3>Precio</h3>
+                    <ul id="listaPrice"></ul>
+                </div>
+            </div>
+            <div>
+                <h6>
+                    Ingrese El Nombre Del Material Ejemplo: Alambre 20 mts.
+                </h6>
+                <input type="text" id="nuevoElemento" >
+
+            </div>
+
+            <div>
+                <h6>
+                    Ingrese El Precio del Material .
+                </h6>
+                <input type="number" id="price"  >
+                <button type="button" onclick="agregarElemento()">Agregar</button>
+            </div>
+            <div class="form-group">
+                <label class="control-label"> Datos para el recibo</label>
+
+                <textarea asp-for="DescriptionReceipt" id="description" class="form-control" readonly></textarea>
+
+
+            </div>
+            <div class="form-group">
+                <label >Precio Total</label>
+                <input asp-for="Total" id="Total" class="form-control" readonly />
+
+            </div>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<section>
+    <script>
+          var miListaString = "";
+          var datos = [];
+        function agregarElemento() {
+
+         
+          var nuevoElemento = document.getElementById("nuevoElemento").value;
+          
+
+
+
+
+          //-------------------------------------------
+
+           var nuevoElemento1 = document.getElementById("price").value;
+              if(nuevoElemento === "" || nuevoElemento1 ==="" || nuevoElemento1 <0){
+                  alert("Verifique los campos del recibo");
+                  return false;
+              }else{
+                  var listaHTML = document.getElementById("miLista");
+
+          var nuevoElementoHTML = document.createElement("li");
+          nuevoElementoHTML.innerText = nuevoElemento;
+          listaHTML.appendChild(nuevoElementoHTML);
+          var lista = document.getElementById("listaPrice");
+            var elementos = document.createElement("li");
+
+             elementos.innerText = nuevoElemento1;
+            lista.appendChild(elementos);
+              }
+
+           
+
+              miListaString += nuevoElemento +" --precio:  "+ nuevoElemento1+"bs"+", ";
+            document.getElementById("description").value=miListaString;
+
+            
+            //----suma-------
+
+             var elementosnum = lista.getElementsByTagName("li");
+              var total = 0;
+
+              for (var i = 0; i < elementosnum.length; i++) {
+
+                  total += parseFloat(elementosnum[i].innerHTML);
+
+              }
+            document.getElementById("Total").value=total.toFixed(2);
+            document.getElementById("nuevoElemento").value=null;
+         document.getElementById("price").value=null;
+
+        }
+        function OcultarForm() {
+         console.log("ocultar form")
+          var divReceipt = document.getElementById("Receipt");
+          var divService = document.getElementById("Service");
+          divReceipt.style.display = "inline-block"
+          divService.style.display = "none"
+
+
+        }
+
+    </script>
+
+
+</section>
+

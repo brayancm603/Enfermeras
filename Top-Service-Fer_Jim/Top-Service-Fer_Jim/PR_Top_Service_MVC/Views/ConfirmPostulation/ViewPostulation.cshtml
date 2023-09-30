@@ -1,0 +1,43 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
+
+@{
+    var fullname = Model.FirstOrDefault().IdProfessionalNavigation.IdProfesionalNavigation.Name + " " + Model.FirstOrDefault().IdProfessionalNavigation.IdProfesionalNavigation.LastName;
+}
+
+<h1>Postulacion</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            
+            <div >
+                <label class="control-label">Titulos Profesionales</label>
+                <div>@Model.FirstOrDefault().ProfessionalTitles</div>
+            </div>
+            <div >
+                <label class="control-label">Certicaciones</label>
+                <label> @Model.FirstOrDefault().Certification</label>
+            </div>
+            <div >
+                <label class="control-label">Experiencia Laboral</label>
+                <label> @Model.FirstOrDefault().WorkExperience</label>
+            </div>
+
+            <div >
+                <label class="control-label">Direccion</label>
+                <label> @Model.FirstOrDefault().Address</label>
+            </div>
+
+            <div >
+                <label class="control-label" >Profesional</label>
+                <label> @fullname</label>
+            </div>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="otro" asp-route-id="@Model.First().IdPostulation" class="btn btn-primary">Aceptar postulacion</a>
+
+    
+</div>

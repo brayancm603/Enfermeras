@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+<br />
+<h1>Detalles</h1>
+<br />
+@if(User.IsInRole("Cliente")){
+
+}
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+        <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+        <h2 class="card-title">Recibo</h2>
+        <h4>Descripcion del Servicio</h4>
+        <p class="card-text"> @item.Description</p>
+         <h4>Fecha</h4>
+        <p class="card-text"> @item.Date</p>
+        <h4>Detalle del servicio</h4>
+        <p class="card-text"> @item.Receipt.Description</p>
+        <h4>Total</h4>
+         <p class="card-text"> @item.Receipt.Total</p>
+         
+        
+        </div>
+        </div>
+        </div>
+    }
+</div>

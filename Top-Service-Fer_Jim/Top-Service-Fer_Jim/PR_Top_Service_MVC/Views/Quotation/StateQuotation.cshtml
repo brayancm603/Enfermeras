@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Quotation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Solicitudes de Cotizacion</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre 
+            </th>
+            
+            <th>
+                Fecha de solicitud
+            </th>
+            
+            <th>
+                Descripcion del problema
+            </th>
+
+              <th>
+                Estado
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.Name)
+            
+                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.LastName)
+            
+                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.SecondLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            
+            
+            <td>
+                
+                    @if(item.Status == 2)
+                    {
+                        <button disabled class="btn btn-success">Aceptado</button>
+                    }
+                    else if (item.Status == 3)
+                    {
+                        <button disabled class="btn btn-danger">Rechazado</button>
+                    }
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

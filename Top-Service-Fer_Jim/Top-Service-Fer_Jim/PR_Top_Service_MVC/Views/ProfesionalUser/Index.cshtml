@@ -1,0 +1,72 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.ProfesionalUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellido
+            </th>
+            <th>
+                Segundo Apellido
+            </th>
+            <th>
+                Correo Electronico
+            </th>
+            <th>
+                Fecha de Nacimiento
+            </th>
+
+            <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+ @foreach (var item in ViewBag.PersonProfUser)
+        {
+        <tr>
+            <td>
+                    @item.name
+            </td>
+            <td>
+                    @item.lastName
+            </td>
+            <td>
+                    @item.secondLastName
+            </td>
+            <td>
+                    @item.email
+            </td>
+ 
+            <td>
+                    @item.Birthdate
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.idPAU">Editar</a> |
+
+                    <a asp-action="Delete" asp-route-id="@item.idPAU">Eliminar</a>
+            </td>
+        </tr>
+        }
+}
+    </tbody>
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

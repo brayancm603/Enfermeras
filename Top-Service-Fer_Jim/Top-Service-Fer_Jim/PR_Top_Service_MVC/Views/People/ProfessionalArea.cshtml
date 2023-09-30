@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Profesionales</h1>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+        <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+        <h3 class="card-title">Nombre: @(item.IdProfessionalNavigation.IdProfesionalNavigation.Name +" " +  item.IdProfessionalNavigation.IdProfesionalNavigation.LastName + " " + item.IdProfessionalNavigation.IdProfesionalNavigation.SecondLastName)</h3>
+        <p class="card-text">Experiencia Laboral: @item.WorkExperience</p>
+         <p class="card-text">Titulos: @item.ProfessionalTitles</p>
+          <p class="card-text">Certificaciones: @item.Certification</p>
+                    @if (User.IsInRole("Admin"))
+                    { 
+                        <a asp-action="Create" asp-controller="ServiceReceipt" asp-route-id="@item.IdProfessional" class="btn btn-primary">Nuevo Servicio</a>
+                        
+                    }
+                    @if (User.IsInRole("Client"))
+                    {
+                        <a asp-action="Create" asp-controller="Quotation" asp-route-id="@item.IdProfessional" class="btn btn-primary">Solicitar Cotizacion</a>
+                    }
+
+         
+        </div>
+        </div>
+        </div>
+    }
+</div>
+
+
+
+
+

@@ -1,0 +1,85 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.ServiceReceipt>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAdmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProfessional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCostumer)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdReceipt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionReceipt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAdmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProfessional)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumer)
+            </td>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdReceipt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionReceipt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdService">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdService">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdService">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
