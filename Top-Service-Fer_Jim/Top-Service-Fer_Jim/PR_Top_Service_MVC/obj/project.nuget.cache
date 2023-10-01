@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oLzJxPgrWiRtRrQ8Wn0ml4yqVCXJELZN2k4LNypTiY4ocDqXmLLvx2O9X17R7TOZaeC+JEf4bJfqDQKNBmeoag==",
+  "dgSpecHash": "pYHxVWuM7avS0+jnV91sg0X9O1PF7e5RERRdXM1z6XiCrCMG9Y3jtHOTxD8imr2hnhzrmXkmXOmsHFSho25XNg==",
   "success": true,
   "projectFilePath": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,6 @@
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.15\\microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.15\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.15.nupkg.sha512",
@@ -41,12 +39,12 @@
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.13\\microsoft.dotnet.scaffolding.shared.6.0.13.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.16\\microsoft.entityframeworkcore.abstractions.6.0.16.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.16\\microsoft.entityframeworkcore.analyzers.6.0.16.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.21\\microsoft.entityframeworkcore.6.0.21.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.21\\microsoft.entityframeworkcore.abstractions.6.0.21.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.21\\microsoft.entityframeworkcore.analyzers.6.0.21.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.15\\microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.16\\microsoft.entityframeworkcore.relational.6.0.16.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.16\\microsoft.entityframeworkcore.sqlserver.6.0.16.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.21\\microsoft.entityframeworkcore.relational.6.0.21.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.21\\microsoft.entityframeworkcore.sqlserver.6.0.21.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.15\\microsoft.entityframeworkcore.tools.6.0.15.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
@@ -80,7 +78,6 @@
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\6.0.13\\microsoft.visualstudio.web.codegeneration.templating.6.0.13.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\6.0.13\\microsoft.visualstudio.web.codegeneration.utils.6.0.13.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\6.0.13\\microsoft.visualstudio.web.codegenerators.mvc.6.0.13.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
@@ -186,7 +183,7 @@
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
@@ -198,36 +195,5 @@
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.AspNet.Razor 3.2.9\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.AspNet.Razor",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.AspNet.WebPages 3.2.9\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.AspNet.WebPages",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Web.Infrastructure 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

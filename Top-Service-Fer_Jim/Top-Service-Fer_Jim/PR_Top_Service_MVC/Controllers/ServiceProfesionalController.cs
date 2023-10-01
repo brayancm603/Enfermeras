@@ -144,7 +144,7 @@ namespace PR_Top_Service_MVC.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Index", "Calendar");
+                return RedirectToAction("Create", "Images");
             }
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", service.IdAdmin);
             ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional", service.IdProfessional);

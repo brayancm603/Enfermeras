@@ -19,8 +19,11 @@ namespace PR_Top_Service_MVC.Models
 
         public virtual DbSet<Admin> Admins { get; set; } = null!;
         public virtual DbSet<AreaProfesional> AreaProfesionals { get; set; } = null!;
+        public virtual DbSet<Comment> Comments { get; set; } = null!;
+
         public virtual DbSet<Costumer> Costumers { get; set; } = null!;
         public virtual DbSet<Department> Departments { get; set; } = null!;
+        public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<Person> People { get; set; } = null!;
         public virtual DbSet<Postulation> Postulations { get; set; } = null!;
         public virtual DbSet<Profesional> Profesionals { get; set; } = null!;
@@ -28,6 +31,7 @@ namespace PR_Top_Service_MVC.Models
         public virtual DbSet<Receipt> Receipts { get; set; } = null!;
         public virtual DbSet<Service> Services { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
+       
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -87,7 +91,21 @@ namespace PR_Top_Service_MVC.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Quotation_JobArea");
             });
+            modelBuilder.Entity<Comment>(entity =>
+            {
+                entity.HasKey(e => e.IdComment);
 
+                entity.ToTable("Comment");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.IdProfessionalNavigation).WithMany(p => p.Comments)
+                    .HasForeignKey(d => d.IdProfessional)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Comment_Profesional");
+            });
             modelBuilder.Entity<Costumer>(entity =>
             {
                 entity.HasKey(e => e.IdCostumer);
@@ -127,7 +145,15 @@ namespace PR_Top_Service_MVC.Models
                     .IsUnicode(false);
             });
 
+            modelBuilder.Entity<Image>(entity =>
+            {
+                entity.HasKey(e => e.IdImages);
 
+                entity.HasOne(d => d.IdServiceNavigation).WithMany(p => p.Images)
+                    .HasForeignKey(d => d.IdService)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Images_Service");
+            });
             modelBuilder.Entity<JobArea>(entity =>
             {
                 entity.HasKey(e => e.idArea);
