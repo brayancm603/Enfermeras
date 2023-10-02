@@ -9,8 +9,9 @@ namespace PR_Top_Service_MVC.Models
 
         public int IdService { get; set; }
 
-        public byte[] Imaged { get; set; } = null!;
+        public string Imaged { get; set; } = null!;
 
         public virtual Service IdServiceNavigation { get; set; } = null!;
     }
 }
+

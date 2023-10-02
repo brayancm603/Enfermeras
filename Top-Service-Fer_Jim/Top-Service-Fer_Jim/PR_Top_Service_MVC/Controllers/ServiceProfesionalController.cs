@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PR_Top_Service_MVC.Models;
+using Firebase.Auth;
+using Firebase.Storage;
 
 namespace PR_Top_Service_MVC.Controllers
 {
@@ -121,9 +123,6 @@ namespace PR_Top_Service_MVC.Controllers
             }
             ViewBag.service = service.Status;
 
-           
-                
-            
             if (ModelState.IsValid)
             {
                
@@ -144,7 +143,7 @@ namespace PR_Top_Service_MVC.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Create", "Images");
+                return RedirectToAction("Index", "Calendar");
             }
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", service.IdAdmin);
             ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional", service.IdProfessional);
@@ -203,7 +202,5 @@ namespace PR_Top_Service_MVC.Controllers
         {
             return (_context.Services?.Any(e => e.IdService == id)).GetValueOrDefault();
         }
-
-
     }
 }

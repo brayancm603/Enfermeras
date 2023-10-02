@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.Image
+﻿@model PR_Top_Service_MVC.Models.Image
 
 @{
     ViewData["Title"] = "Create";
@@ -10,24 +10,59 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdService" class="control-label"></label>
-                <select asp-for="IdService" class ="form-control" asp-items="ViewBag.IdService"></select>
+                Descripción del servicio: @ViewData["IdService"]
+                <input type="hidden" name="IdService" value="@ViewData["Id"]" />
             </div>
-            <div class="form-group">
-                <label asp-for="Imaged" class="control-label"></label>
-                <input asp-for="Imaged" class="form-control" />
-                <span asp-validation-for="Imaged" class="text-danger"></span>
+
+            <h4 class="bg-grea-3">Cargar imágenes de la campaña</h4>
+            <div class="row pad-20">
+                <div class="col-lg-12">
+                    <center>
+                        <div>
+                            <label for="Images">Imágenes:</label>
+                            <input class="form-control" id="imageInput" name="ImageService" type="file" accept="image/*" multiple />
+                            <br />
+                        </div>
+                        <div class="container">
+                            <div id="image-preview"></div>
+                        </div>
+                        <div class="mb-3"></div>
+                    </center>
+                </div>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
+
         </form>
     </div>
 </div>
 
+<script>
+    document.getElementById('imageInput').addEventListener('change', handleFileSelect);
+    function handleFileSelect(event) {
+        var files = event.target.files;
+        var imagePreview = document.getElementById('image-preview');
+
+        // Clear any existing previews
+        imagePreview.innerHTML = '';
+
+        for (var i = 0; i < files.length; i++) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100%';
+                imagePreview.appendChild(img);
+            };
+            reader.readAsDataURL(files[i]);
+        }
+    }
+</script>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

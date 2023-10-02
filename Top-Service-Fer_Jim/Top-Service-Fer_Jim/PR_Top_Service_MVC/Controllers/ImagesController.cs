@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Firebase.Auth;
+using Firebase.Storage;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PR_Top_Service_MVC.Models;
@@ -40,10 +42,22 @@ namespace PR_Top_Service_MVC.Controllers
             return View(image);
         }
 
+        int idCreate = 0;
         // GET: Images/Create
-        public IActionResult Create()
+        public IActionResult Create(int id)
         {
-            ViewData["IdService"] = new SelectList(_context.Services, "IdService", "IdService");
+            idCreate = id;
+            var service = _context.Services.FirstOrDefault(s => s.IdService == id);
+
+            if (service != null)
+            {
+                // Obtén la descripción del servicio
+                string description = service.Description;
+
+                // Luego, puedes usar la descripción para establecer el ViewData
+                ViewData["IdService"] = description;
+                ViewData["Id"] = id;
+            }
             return View();
         }
 
@@ -52,16 +66,33 @@ namespace PR_Top_Service_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdImages,IdService,Imaged")] Image image)
+        public async Task<IActionResult> Create(Image image, List<IFormFile> ImageService, int IdService)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(image);
+
+            // Asigna el IdService
+            image.IdService = IdService;
+
+
+                foreach (var file in ImageService)
+                {
+                    Stream imagen = file.OpenReadStream();
+                    string urlImagen = await SubirStorage(imagen, file.FileName);
+
+                    // Crea un nuevo objeto Image para cada imagen
+                    var imageEntity = new Image
+                    {
+                        IdService = image.IdService,
+                        Imaged = urlImagen
+                    };
+
+                    // Agrega la imagen a la base de datos
+                    _context.Images.Add(imageEntity);
+                }
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["IdService"] = new SelectList(_context.Services, "IdService", "IdService", image.IdService);
-            return View(image);
+            
+
         }
 
         // GET: Images/Edit/5
@@ -158,6 +189,34 @@ namespace PR_Top_Service_MVC.Controllers
         private bool ImageExists(int id)
         {
             return (_context.Images?.Any(e => e.IdImages == id)).GetValueOrDefault();
+        }
+
+        public async Task<string> SubirStorage(Stream archivo, string nombre)
+        {
+            string email = "topServices@gmail.com";
+            string clave = "topServicesB123";
+            string ruta = "topservicesprueba.appspot.com";
+            string api_key = "AIzaSyA1w6Jv3AfD5ihWKA-pvW_fn64Ds5PdkXo";
+
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(api_key));
+            var a = await authProvider.SignInWithEmailAndPasswordAsync(email, clave);
+
+            var authToken = a.FirebaseToken;
+
+            var cancellation = new CancellationTokenSource();
+
+            var task = new FirebaseStorage(
+                ruta,
+                new FirebaseStorageOptions
+                {
+                    AuthTokenAsyncFactory = () => Task.FromResult(authToken),
+                    ThrowOnCancel = true
+                }
+                )
+                .Child("Fotos_Servicio").Child(nombre).PutAsync(archivo, cancellation.Token);
+            var dowloadURL = await task;
+
+            return dowloadURL;
         }
     }
 }

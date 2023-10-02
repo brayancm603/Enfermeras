@@ -25,6 +25,7 @@ namespace PR_Top_Service_MVC.Models
         public virtual DbSet<Department> Departments { get; set; } = null!;
         public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<Person> People { get; set; } = null!;
+        public virtual DbSet<PagoQr> PagoQRs { get; set; } = null;
         public virtual DbSet<Postulation> Postulations { get; set; } = null!;
         public virtual DbSet<Profesional> Profesionals { get; set; } = null!;
         public virtual DbSet<Quotation> Quotations { get; set; } = null!;
@@ -176,6 +177,17 @@ namespace PR_Top_Service_MVC.Models
                     .IsUnicode(false)
                     .IsFixedLength();
             });
+            modelBuilder.Entity<PagoQr>(entity =>
+            {
+                entity.ToTable("PagoQr");
+
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.ImageQr)
+                    .HasMaxLength(500)
+                    .IsUnicode(false)
+                    .HasColumnName("imageQR");
+            });
+
             modelBuilder.Entity<Person>(entity =>
             {
                 entity.HasKey(e => e.IdPerson);
