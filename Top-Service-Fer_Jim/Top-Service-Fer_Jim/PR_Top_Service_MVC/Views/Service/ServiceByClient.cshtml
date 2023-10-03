@@ -6,7 +6,7 @@
 
 <h1>Servicios</h1>
 
-<a asp-controller="PagoQr" asp-action="Index">QR Pagar Servicio</a>|
+<a asp-controller="PagoQrs" asp-action="Index">QR Pagar Servicio</a>|
 
 <table class="table">
     <thead>
@@ -21,7 +21,7 @@
             <th>
                 Estado
             </th>
-
+            
         </tr>
     </thead>
     <tbody>
@@ -38,10 +38,13 @@
                 <td>
                     <button disabled class="btn btn-success">
                         @Service.ReturnToStatus((int)item.Status)
+                        
                     </button>
+                    @if (item.Status == (int)Status.Terminado)
+                    {
+                        <a class="btn btn-primary" style="margin: 5px;" asp-controller="Comment" asp-action="Create">Comentarios</a>
+                    }
                 </td>
-
-                
             </tr>
         }
     </tbody>
