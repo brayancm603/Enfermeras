@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace PR_Top_Service_MVC.Models
 {
@@ -35,7 +36,8 @@ namespace PR_Top_Service_MVC.Models
         public double? Longitude { get; set; }
 
         public byte deleted { get; set; }
-
+        public string? Commented { get; set; }
+        public virtual ICollection<Rating>? Ratings { get; set; } 
         public virtual Admin? IdAdminNavigation { get; set; } = null!;
         public virtual Profesional? IdProfessionalNavigation { get; set; } = null!;
         public virtual Costumer? IdCostumerNavigation { get; set; } = null!;

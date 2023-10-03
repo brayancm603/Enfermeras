@@ -1,0 +1,39 @@
+﻿@model PR_Top_Service_MVC.Models.Rating
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div align="center">
+    <h4>Califica este servicio</h4>
+</div>
+
+<hr />
+<div align="center">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <br />
+            <label class="control-label">Califique su servicio</label>
+            <div class="rating">
+
+                <input type="radio" name="rating" value=5 id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value=4 id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value=3 id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value=2 id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value=1 id="1" checked><label for="1">☆</label>
+
+            </div>
+            <br />
+            <div class="form-group">
+                <label class="control-label">Deje su comentario</label>
+                <input placeholder="Opcional" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+           <br />
+            <div class="form-group">
+                <input type="submit" value="Registrar Opinion" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

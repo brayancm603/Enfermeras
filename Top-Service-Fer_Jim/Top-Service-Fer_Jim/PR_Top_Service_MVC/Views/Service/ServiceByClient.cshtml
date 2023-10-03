@@ -21,6 +21,9 @@
             <th>
                 Estado
             </th>
+            <th>
+                Califica!!
+            </th>
 
         </tr>
     </thead>
@@ -40,6 +43,14 @@
                         @Service.ReturnToStatus((int)item.Status)
                     </button>
                 </td>
+                @if (item.Status_Service == 2 && item.Commented == null)
+                {
+                    <td>
+                        <a class="btn btn-info" asp-action="Create" asp-controller="Rating" asp-route-id="@item.IdService">Comentar</a>
+                    </td>
+                }
+
+                
 
                 
             </tr>

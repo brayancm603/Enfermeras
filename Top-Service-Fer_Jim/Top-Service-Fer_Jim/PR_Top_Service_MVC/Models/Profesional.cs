@@ -12,6 +12,7 @@ namespace PR_Top_Service_MVC.Models
             Services = new HashSet<Service>();
             Quotations = new HashSet<Quotation>();
             AreaProfesionals = new HashSet<AreaProfesional>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int IdProfesional { get; set; }
@@ -22,6 +23,7 @@ namespace PR_Top_Service_MVC.Models
         public virtual Person? IdProfesionalNavigation { get; set; } = null!;
        
         public virtual ICollection<Postulation>? Postulations { get; set; }
+        public virtual ICollection<Rating>? Ratings { get; set; }
         public virtual ICollection<Service>? Services { get; set; }
         public virtual ICollection<Quotation> Quotations { get; set; }
         public virtual ICollection<AreaProfesional> AreaProfesionals { get; set; }
