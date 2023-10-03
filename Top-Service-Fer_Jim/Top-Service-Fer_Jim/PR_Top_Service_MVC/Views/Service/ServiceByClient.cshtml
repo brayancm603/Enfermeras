@@ -40,10 +40,6 @@
                         @Service.ReturnToStatus((int)item.Status)
                         
                     </button>
-                    @if (item.Status == (int)Status.Terminado)
-                    {
-                        <a class="btn btn-primary" style="margin: 5px;" asp-controller="Comment" asp-action="Create">Comentarios</a>
-                    }
                 </td>
             </tr>
         }
