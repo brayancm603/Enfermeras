@@ -1,0 +1,27 @@
+﻿@using PR_Top_Service_MVC.Controllers;
+@if(User.IsInRole("SuperAdmin")){
+    <div align="center">
+    <form asp-action="Cargar" class="form-group"  method="post" enctype="multipart/form-data" >
+        
+        <div >
+            <br />
+            <label id="Image" > Seleccione nuevo qr de pago</label>
+            <br />
+             <input class="form-control" name="image" type="file" value="Seleccionar Imagen" accept=".jpg"  required/>
+             <br />
+             <input  type="submit" value="Guardar" class="btn btn-primary"/>
+        </div>
+     
+       
+    </form>
+</div>
+}
+
+<div align="center">
+    
+
+    
+    <h1 style="font-size:50 ; margin-left:300; font-family:"Arial">Pago Qr</h1>
+
+    <img  src="~/images/QrCode/CodigoQr.jpg"style="height:500px; width:400px ; margin-top:100px" align="center" />
+</div>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Postulacion</h1>
+
+<p>
+    <a asp-action="Create">Postular</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Titulos Profesionales
+            </th>
+            <th>
+                Certificaciones
+            </th>
+            <th>
+                Experiencia Laboral
+            </th>
+           
+            <th>
+                Direccion
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfessionalTitles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Certification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExperience)
+            </td>
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+           
+            <td>
+               
+                 
+                <a asp-action="Delete" asp-route-id="@item.IdPostulation">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

@@ -1,0 +1,127 @@
+﻿@model PR_Top_Service_MVC.Models.Service
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Service</h4>
+<hr />
+<div class="row">
+    
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdService" />
+            <div class="form-group" hidden>
+                <label asp-for="IdAdmin" class="control-label"></label>
+                <select asp-for="IdAdmin" class="form-control" asp-items="ViewBag.IdAdmin"></select>
+                <span asp-validation-for="IdAdmin" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdProfessional" class="control-label"></label>
+                <select asp-for="IdProfessional" class="form-control" asp-items="ViewBag.IdProfessional"></select>
+                <span asp-validation-for="IdProfessional" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <br>
+                <label class="control-label">@Html.DisplayFor(model => model.Description)</label>
+                <input asp-for="Description" class="form-control" hidden />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <br>
+                <label class="control-label">@Html.DisplayFor(model => model.Date)</label>
+                <input asp-for="Date" class="form-control" hidden />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status_Service" class="control-label"></label>
+                <input asp-for="Status_Service" class="form-control" />
+                <span asp-validation-for="Status_Service" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="DateTime_On_Service" class="control-label"></label>
+                <input asp-for="DateTime_On_Service" class="form-control" />
+                <span asp-validation-for="DateTime_On_Service" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="DateTime_Off_Service" class="control-label"></label>
+                <input asp-for="DateTime_Off_Service" class="form-control" />
+                <span asp-validation-for="DateTime_Off_Service" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" id="latitude" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" id="longitude" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <button  type="submit" value="Save" class="btn btn-primary">Guardar</button>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdCostumer" class="control-label"></label>
+                <select asp-for="IdCostumer" class="form-control" asp-items="ViewBag.IdCostumer"></select>
+                <span asp-validation-for="IdCostumer" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.getElementById("latitude").value = latitude;
+            document.getElementById("longitude").value = longitude;
+            console.log(document.getElementById("latitude"));
+            console.log(document.getElementById("longitude"));
+
+            console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+
+
+            //aquí puedes hacer lo que quieras con la latitud y longitud, como enviarla al servidor mediante una llamada AJAX.
+        }
+        function submitForm() {
+            var requiredValue = document.getElementById("latitude").value;
+            if (requiredValue == null || requiredValue.trim() === "") {
+                var errorMessage = "Debe Autorizar el uso de su ubicacion";
+                document.getElementById("errorMessage").innerHTML = errorMessage;
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        getLocation()
+        
+    </script>
+}
+
+    <div>
+    <a asp-action="Index" asp-route-id="@ViewBag.service">Salir</a>
+    </div>
+
