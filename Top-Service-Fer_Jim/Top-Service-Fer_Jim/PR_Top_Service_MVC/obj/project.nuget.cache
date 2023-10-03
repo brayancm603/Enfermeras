@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gVf7k0q5/9KBwiNaU6P1JXJFgXIuz36bXCDb+E8YxeHBZUVLkOvhXAKVhTNuhCN/HimghLCvwqIm6RIlEuAcxQ==",
+  "dgSpecHash": "HsIPVyrWWxgjdgcwiLVkdwsmAedl/GCWvny0MP0xu87OUmKUe0qrUjuB3zSfYtzJUer7dTr2GXsyJ7pOBs0uHg==",
   "success": true,
   "projectFilePath": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
+    "C:\\Users\\Braian Canelas\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Braian Canelas\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

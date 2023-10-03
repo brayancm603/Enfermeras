@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Imaged)
+                Imagen del servicio
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdServiceNavigation)
+                Descripcion del servicio
             </th>
             <th></th>
         </tr>
@@ -25,17 +25,23 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <img src="@item.Imaged"  width="100" height="100"/>
+                <img src="@item.Imaged"  width="200" height="200"/>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdServiceNavigation.IdService)
+                @Html.DisplayFor(modelItem => item.IdServiceNavigation.Description)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdImages">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdImages">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdImages">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdImages" class="btn btn-success">
+                    <i class="fa fa-pencil fa-2x" style="color: #FFFFFF;"></i>
+                    Editar
+                </a>
+                |
+                <a asp-action="Delete" asp-route-id="@item.IdImages" class="btn btn-danger">
+                        <i class="fa fa-trash fa-2x" style="color: #FFFFFF;"></i>
+                    Eliminar
+                </a>
             </td>
-        </tr>
+            </tr>
 }
     </tbody>
 </table>
