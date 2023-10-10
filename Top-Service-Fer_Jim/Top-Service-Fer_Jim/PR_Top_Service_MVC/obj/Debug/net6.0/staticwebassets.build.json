@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xs1NBXK9JEd9aOZozq8fQPrdONFSczB6l+8hrcxFMjQ=",
+  "Hash": "kskLxjAn/VaA/GdAC5AwOremHSeeJcUrP33WajbpXvM=",
   "Source": "PR_Top_Service_MVC",
   "BasePath": "_content/PR_Top_Service_MVC",
   "Mode": "Default",
@@ -1122,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot\\images\\Commons_QR_code.png"
     },
     {
-      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\cuarta.jpg",
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\cuarta.png",
       "SourceId": "PR_Top_Service_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
       "BasePath": "_content/PR_Top_Service_MVC",
-      "RelativePath": "images/cuarta.jpg",
+      "RelativePath": "images/cuarta.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,15 +1136,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\cuarta.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\cuarta.png"
     },
     {
-      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\primera.jpg",
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\Fiable.webp",
       "SourceId": "PR_Top_Service_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
       "BasePath": "_content/PR_Top_Service_MVC",
-      "RelativePath": "images/primera.jpg",
+      "RelativePath": "images/Fiable.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,7 +1153,58 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\primera.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Fiable.webp"
+    },
+    {
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\home.jpg",
+      "SourceId": "PR_Top_Service_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
+      "BasePath": "_content/PR_Top_Service_MVC",
+      "RelativePath": "images/home.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\home.jpg"
+    },
+    {
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\money.jpg",
+      "SourceId": "PR_Top_Service_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
+      "BasePath": "_content/PR_Top_Service_MVC",
+      "RelativePath": "images/money.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\money.jpg"
+    },
+    {
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\primera.png",
+      "SourceId": "PR_Top_Service_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
+      "BasePath": "_content/PR_Top_Service_MVC",
+      "RelativePath": "images/primera.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\primera.png"
     },
     {
       "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\QrCode\\CodigoQr.jpg",
@@ -1173,12 +1224,12 @@
       "OriginalItemSpec": "wwwroot\\images\\QrCode\\CodigoQr.jpg"
     },
     {
-      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\quinta.jpg",
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\quinta.jpeg",
       "SourceId": "PR_Top_Service_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
       "BasePath": "_content/PR_Top_Service_MVC",
-      "RelativePath": "images/quinta.jpg",
+      "RelativePath": "images/quinta.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1187,15 +1238,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\quinta.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\quinta.jpeg"
     },
     {
-      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\segunda.jpg",
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\segunda.jpeg",
       "SourceId": "PR_Top_Service_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
       "BasePath": "_content/PR_Top_Service_MVC",
-      "RelativePath": "images/segunda.jpg",
+      "RelativePath": "images/segunda.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1204,15 +1255,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\segunda.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\segunda.jpeg"
     },
     {
-      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\tercera.jpg",
+      "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\tercera.jpeg",
       "SourceId": "PR_Top_Service_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\",
       "BasePath": "_content/PR_Top_Service_MVC",
-      "RelativePath": "images/tercera.jpg",
+      "RelativePath": "images/tercera.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1221,7 +1272,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\tercera.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\tercera.jpeg"
     },
     {
       "Identity": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\user.png",

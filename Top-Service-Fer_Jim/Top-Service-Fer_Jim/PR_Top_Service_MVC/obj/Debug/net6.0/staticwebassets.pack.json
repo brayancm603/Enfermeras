@@ -17,28 +17,40 @@
       "PackagePath": "staticwebassets\\images\\Commons_QR_code.png"
     },
     {
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\Fiable.webp",
+      "PackagePath": "staticwebassets\\images\\Fiable.webp"
+    },
+    {
       "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\QrCode\\CodigoQr.jpg",
       "PackagePath": "staticwebassets\\images\\QrCode\\CodigoQr.jpg"
     },
     {
-      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\cuarta.jpg",
-      "PackagePath": "staticwebassets\\images\\cuarta.jpg"
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\cuarta.png",
+      "PackagePath": "staticwebassets\\images\\cuarta.png"
     },
     {
-      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\primera.jpg",
-      "PackagePath": "staticwebassets\\images\\primera.jpg"
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\home.jpg",
+      "PackagePath": "staticwebassets\\images\\home.jpg"
     },
     {
-      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\quinta.jpg",
-      "PackagePath": "staticwebassets\\images\\quinta.jpg"
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\money.jpg",
+      "PackagePath": "staticwebassets\\images\\money.jpg"
     },
     {
-      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\segunda.jpg",
-      "PackagePath": "staticwebassets\\images\\segunda.jpg"
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\primera.png",
+      "PackagePath": "staticwebassets\\images\\primera.png"
     },
     {
-      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\tercera.jpg",
-      "PackagePath": "staticwebassets\\images\\tercera.jpg"
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\quinta.jpeg",
+      "PackagePath": "staticwebassets\\images\\quinta.jpeg"
+    },
+    {
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\segunda.jpeg",
+      "PackagePath": "staticwebassets\\images\\segunda.jpeg"
+    },
+    {
+      "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\tercera.jpeg",
+      "PackagePath": "staticwebassets\\images\\tercera.jpeg"
     },
     {
       "Id": "D:\\Univalle\\Sexto Semestre\\Proyecto Sistemas 3\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\wwwroot\\images\\user.png",

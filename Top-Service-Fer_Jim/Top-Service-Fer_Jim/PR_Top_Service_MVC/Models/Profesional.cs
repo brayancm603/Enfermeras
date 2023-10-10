@@ -20,7 +20,6 @@ namespace PR_Top_Service_MVC.Models
         public DateTime Birthdate { get; set; }
         public double? Rating { get; set; }
         public virtual Person? IdProfesionalNavigation { get; set; } = null!;
-        public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
         public virtual ICollection<Postulation>? Postulations { get; set; }
         public virtual ICollection<Service>? Services { get; set; }
         public virtual ICollection<Quotation> Quotations { get; set; }

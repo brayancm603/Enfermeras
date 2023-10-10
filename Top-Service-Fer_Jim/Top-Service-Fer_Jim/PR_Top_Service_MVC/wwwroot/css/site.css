@@ -14,7 +14,47 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.container1 {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description, .container1 {
+    width: 100%;
+}
+.carousel {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+.paragraph{
+    margin-top: 15px;
+}
+.description {
+    padding: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Establece el límite mínimo de ancho a 360px */
+@media (min-width: 360px) {
+    .container1 {
+        flex-direction: row;
+    }
+
+    .description, .carousel {
+        width: 50%;
+    }
 }
 
 #footer {
