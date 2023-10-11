@@ -3,6 +3,7 @@ using Firebase.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Validations;
 using PR_Top_Service_MVC.Models;
 
 namespace PR_Top_Service_MVC.Controllers
@@ -21,6 +22,27 @@ namespace PR_Top_Service_MVC.Controllers
         {
             var topServiceContext = _context.Images.Include(i => i.IdServiceNavigation);
             return View(await topServiceContext.ToListAsync());
+        }
+        //GET: Images by Service ID
+        public async Task<IActionResult> DetailsImage(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest("El ID no fue proporcionado.");
+            }
+
+            var images = await _context.Images
+                                       .Include(i => i.IdServiceNavigation)
+                                       .Where(i => i.IdService == id)
+                                       .ToListAsync();
+
+            if (images == null || images.Count == 0)
+            {
+                TempData["ErrorMessage"] = "No se encontraron comprobantes para este servicio.";
+                return RedirectToAction("ServiceFinalized","Service"); 
+            }
+
+            return View(images);
         }
 
         // GET: Images/Details/5

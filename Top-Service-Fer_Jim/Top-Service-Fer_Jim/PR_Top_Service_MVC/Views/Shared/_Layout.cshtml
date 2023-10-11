@@ -75,6 +75,13 @@
                          <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Service" asp-action="Index">Servicios</a>
                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Service" asp-action="ServiceFinalized">
+                                    <i class="fa fa-check" style="color: #6AC9AA;"></i>
+                                    Servicios Finalizados
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
                         }
                         @if (User.IsInRole("SuperAdmin"))
                         {
