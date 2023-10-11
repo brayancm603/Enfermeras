@@ -35,7 +35,7 @@ namespace PR_Top_Service_MVC.Models
         public double? Longitude { get; set; }
 
         public byte deleted { get; set; }
-
+        public virtual ICollection<Person>? IdPersonNavigation { get; set; } = new List<Person>();
         public virtual Admin? IdAdminNavigation { get; set; } = null!;
         public virtual Profesional? IdProfessionalNavigation { get; set; } = null!;
         public virtual Costumer? IdCostumerNavigation { get; set; } = null!;

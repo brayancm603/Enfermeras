@@ -39,7 +39,7 @@ namespace PR_Top_Service_MVC.Controllers
             if (images == null || images.Count == 0)
             {
                 TempData["ErrorMessage"] = "No se encontraron comprobantes para este servicio.";
-                return RedirectToAction("ServiceFinalized","Service"); 
+                return RedirectToAction("ServiceFinalized", "Service");
             }
 
             return View(images);

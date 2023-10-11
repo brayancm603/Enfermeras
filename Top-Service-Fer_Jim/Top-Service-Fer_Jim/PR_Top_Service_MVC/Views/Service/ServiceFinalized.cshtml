@@ -5,6 +5,12 @@
 }
 
 <h1>Servicios Finalizados</h1>
+@if (TempData.ContainsKey("ErrorMessage"))
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
 
 <table class="table">
     <thead>
@@ -24,9 +30,6 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdService)
-                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.IdProfessional)
                 </td>
