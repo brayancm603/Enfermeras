@@ -76,3 +76,40 @@ body {
 
 .checked {
     color: orange;
+}
+h1 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.btn-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+.form-control {
+    width: 100%; 
+    padding: 10px; 
+}
+
+
+.btn {
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #0056b3; 
+    }

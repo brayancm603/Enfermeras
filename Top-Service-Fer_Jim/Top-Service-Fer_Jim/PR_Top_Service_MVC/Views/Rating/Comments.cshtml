@@ -2,33 +2,17 @@
 
 <h1>Comentarios</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            
-        </tr>
-    </thead>
-    <tbody>
+<div class="container">
+    <div class="row">
         @foreach (var item in Model)
         {
-
-            <div class="col">
-                <div class="card text-center" style="width: 70rem; height:5rem ">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
                     <div class="card-body">
-                       
-                        <p style="text-align:left" class="card-text"> @item.Description</p>
-                       
-
-                       
+                        <p class="card-text">@item.Description</p>
                     </div>
                 </div>
             </div>
-            <br />
-            
         }
-    </tbody>
-</table>
-<br />
-<br />
-<br />
-<br />
+    </div>
+</div>

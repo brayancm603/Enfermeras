@@ -125,7 +125,7 @@ namespace PR_Top_Service_MVC.Controllers
                         IdUser = p.IdPerson,
                         Email = personAdmin.Email,
                         Password = Password,
-                        Role = personAdmin.Role
+                        Role = personAdmin.Email
                     };
                     SendEmail(u.Email, Request.Form["password"]);
 
@@ -147,11 +147,11 @@ namespace PR_Top_Service_MVC.Controllers
                     return View(personAdmin);
                 }
             }
-            catch
+            catch(Exception d)
             {
                 await transaction.RollbackAsync();
 
-                ModelState.AddModelError("", "Ocurrió un error al crear al admin. Por favor, inténtalo nuevamente.");
+                ModelState.AddModelError("", "Ocurrió un error al crear al admin. Por favor, inténtalo nuevamente."+d);
                 ViewData["IdDepartment"] = new SelectList(_context.Departments, "IdDepartment", "Name", personAdmin.IdDepartment);
                 return View(personAdmin);
             }
