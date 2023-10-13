@@ -19,7 +19,6 @@ namespace PR_Top_Service_MVC.Models
 
         public virtual DbSet<Admin> Admins { get; set; } = null!;
         public virtual DbSet<AreaProfesional> AreaProfesionals { get; set; } = null!;
-        public virtual DbSet<Comment> Comments { get; set; } = null!;
 
         public virtual DbSet<Costumer> Costumers { get; set; } = null!;
         public virtual DbSet<Department> Departments { get; set; } = null!;
@@ -92,21 +91,7 @@ namespace PR_Top_Service_MVC.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Quotation_JobArea");
             });
-            modelBuilder.Entity<Comment>(entity =>
-            {
-                entity.HasKey(e => e.IdComment);
-
-                entity.ToTable("Comment");
-
-                entity.Property(e => e.Description)
-                    .HasMaxLength(150)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.IdProfessionalNavigation).WithMany(p => p.Comments)
-                    .HasForeignKey(d => d.IdProfessional)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Comment_Profesional");
-            });
+           
             modelBuilder.Entity<Costumer>(entity =>
             {
                 entity.HasKey(e => e.IdCostumer);

@@ -6,25 +6,68 @@
         <form asp-action="Cargar" class="form-group" method="post" enctype="multipart/form-data">
             <div>
                 <br />
-                <label id="Image"> Seleccione nuevo <b>QR</b> de pago</label>
+                <label for="image"><h3>Seleccione el nuevo <b><i class="fa fa-qrcode" style="color: #000000;"></i></b> de pago</h3></label>
                 <br />
-                <input class="form-control" name="image" type="file" value="Seleccionar Imagen" accept="image/*" required />
+                <input id="imageInput" class="form-control" name="image" type="file" value="Seleccionar Imagen" accept="image/*" required />
+                <div class="container" id="imageContainer" style="max-width: 300px; max-height: 300px; overflow: hidden; display: inline-block">
+                    <ul id="image-preview" class="image-list"></ul>
+                </div>
                 <br />
-                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-success" />
             </div>
         </form>
     </div>
 }
 
 <div align="center">
-    <h1 style="font-size:50; margin-left:300; font-family: Arial">Pago Qr</h1>
+    <h1 style="font-size:50; margin-left:300; font-family: Arial">Pago <i class="fa fa-qrcode" style="color: #000000;"></i></h1>
 
     @if (Model != null && !string.IsNullOrEmpty(Model.ImageQr))
     {
-        <img src="@Model.ImageQr" style="height:250px; width:250px ; margin-top:100px" align="center" />
+        <img src="@Model.ImageQr" style="max-width: 250px; max-height: 250px; margin-top:100px" align="center" />
     }
     else
     {
         <p>No hay QR</p>
     }
 </div>
+
+<script>
+    document.getElementById('imageInput').addEventListener('change', handleFileSelect);
+
+    function handleFileSelect(event) {
+        var files = event.target.files;
+        var imageContainer = document.getElementById('imageContainer');
+        var h4Element = document.createElement('h4');
+        h4Element.innerText = 'QR que será subida';
+        var imagePreview = document.getElementById('image-preview');
+        imagePreview.innerHTML = '';
+
+        if (files.length > 0) {
+            imageContainer.style.display = 'inline-block';
+
+            var ul = document.createElement('ul');
+            ul.classList.add('image-list');
+
+            for (var i = 0; i < files.length; i++) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var li = document.createElement('li');
+                    var img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.maxWidth = '100%';
+                    li.appendChild(img);
+                    ul.appendChild(li);
+                };
+                reader.readAsDataURL(files[i]);
+            }
+
+            imagePreview.appendChild(ul);
+            imageContainer.insertBefore(h4Element, imagePreview);
+        }
+        else {
+            imageContainer.style.display = 'none';
+            h4Element.remove();
+        }
+    }
+</script>

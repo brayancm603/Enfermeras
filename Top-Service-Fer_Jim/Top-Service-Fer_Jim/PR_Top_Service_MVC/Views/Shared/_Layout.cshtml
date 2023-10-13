@@ -33,12 +33,6 @@
                             </a>
                         </li>
                         
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre nosotros</a>
-                        </li>
-
-
                         @if (User.IsInRole("Client"))
                         {
                            <li class="nav-item">
@@ -81,6 +75,13 @@
                          <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Service" asp-action="Index">Servicios</a>
                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Service" asp-action="ServiceFinalized">
+                                    <i class="fa fa-check" style="color: #6AC9AA;"></i>
+                                    Servicios Finalizados
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
                         }
                         @if (User.IsInRole("SuperAdmin"))
                         {
@@ -88,7 +89,11 @@
                             <a class="nav-link" asp-area="" asp-controller="PersonAdmin" asp-action="Index">Registro Administradores</a>
                              </li>
                              <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="PagoQrs" asp-action="Index">PagoQr</a>
+                            <a class="nav-link" asp-area="" asp-controller="PagoQrs" asp-action="Index">
+                                    <i class="fa fa-qrcode" style="color: #6AC9AA;"></i>
+                                        Pago QR
+                                    <span class="visually-hidden">(current)</span>
+                            </a>
                              </li>
                         }
    
