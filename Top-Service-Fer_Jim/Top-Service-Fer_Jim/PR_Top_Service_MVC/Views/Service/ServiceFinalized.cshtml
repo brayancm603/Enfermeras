@@ -12,17 +12,23 @@
     </div>
 }
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
+                <i class="fa fa-user" style="color: black;"></i>
                 Profecional Encargado
+                <span class="visually-hidden">(current)</span>
             </th>
             <th>
-                Descripcion del problema
+                <i class="fa fa-window-maximize" style="color: black;"></i>
+                Problema
+                <span class="visually-hidden">(current)</span>
             </th>
             <th>
+                <i class="fa fa-calendar-check-o" style="color: black;"></i>
                 Fecha Finalizacion
+                <span class="visually-hidden">(current)</span>
             </th>
         </tr>
     </thead>
@@ -46,7 +52,6 @@
                     </button>
                     <a asp-controller="Images" asp-action="DetailsImage" asp-route-id="@item.IdService" class="btn btn-success" style="margin-left:5px;">
                          <i class="fa fa-file-image-o" style="color: #FFFFFF;"></i>
-                            Ver Comprobantes
                          <span class="visually-hidden">(current)</span>
                     </a>
                 </td>
