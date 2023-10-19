@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">TOP_SERVICE</a>
+                <a class="navbar-brand" href="#">TOP SERVICE</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,57 +28,98 @@
                         <li class="nav-item">
                             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">
                                 <i class="fa fa-home" style="color: #6AC9AA;"></i>
-                                Home
+                                Inicio
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
-                        
+
                         @if (User.IsInRole("Client"))
                         {
-                           <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="JobArea" asp-action="Index">Areas de Trabajo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Service" asp-action="ServiceByClient">Servicio Cliente</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Quotation" asp-action="StateQuotation">Respuestas de Solicitudes</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="ServiceReceipt" asp-action="Receipt">Ver Detalle De tus Servicios</a>
-                        </li>
+                            <li class="nav-item">
+                               
+                                <a class="nav-link" asp-area="" asp-controller="JobArea" asp-action="Index">
+                                    <i class="fa fa-male" style="color: #6AC9AA;"></i>
+                                    Areas de trabajo
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                           
+                                <a class="nav-link" asp-area="" asp-controller="Service" asp-action="ServiceByClient">
+                                    <i class="fa fa-users" style="color: #6AC9AA;"></i>
+                                    Servicio cliente
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                          
+                            </li>
+                            <li class="nav-item">
+                        
+                                <a class="nav-link" asp-area="" asp-controller="Quotation" asp-action="StateQuotation">
+                                    <i class="fa fa-address-book-o" style="color: #6AC9AA;"></i>Respuestas de solicitudes
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                             
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="ServiceReceipt" asp-action="Receipt">
+                                    <i class="fa fa-eye" style="color: #6AC9AA;"></i>Ver Detalle de tus servicios
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                  
+                            </li>
                         }
 
                         @if (User.IsInRole("Professional"))
                         {
-                           <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Quotation" asp-action="ConfirmQuotation">Ver cotizaciones</a>
-                        </li>
-                        
-                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Calendar" asp-action="Index">Calendario de servicios </a>
-                        </li>
-                        
-                       
-                            
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Quotation" asp-action="ConfirmQuotation">
+                                    <i class="fa fa-newspaper-o" style="color: #6AC9AA;"></i>
+                                    Ver cotizaciones
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Calendar" asp-action="Index">
+                                    <i class="fa fa-calendar" style="color: #6AC9AA;"></i>
+                                    Calendario de servicios
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+
+
+
                         }
                         @if (User.IsInRole("Admin"))
                         {
-                            
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="JobArea" asp-action="Index">Areas de Trabajo</a>
-                        </li>
-                         
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="ConfirmPostulation" asp-action="Index">Postulaciones</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Service" asp-action="Index">Servicios</a>
-                        </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="JobArea" asp-action="Index">
+                                    <i class="fa fa-male" style="color: #6AC9AA;"></i>
+                                    Areas de trabajo
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="ConfirmPostulation" asp-action="Index">
+                                    <i class="fa fa-mortar-board" style="color: #6AC9AA;"></i>
+                                    Postulaciones
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Service" asp-action="Index">
+                                    <i class="fa fa-wrench" style="color: #6AC9AA;"></i>
+                                    Servicios
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Service" asp-action="ServiceFinalized">
                                     <i class="fa fa-check" style="color: #6AC9AA;"></i>
-                                    Servicios Finalizados
+                                    Servicios finalizados
                                     <span class="visually-hidden">(current)</span>
                                 </a>
                             </li>
@@ -86,25 +127,28 @@
                         @if (User.IsInRole("SuperAdmin"))
                         {
                             <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="PersonAdmin" asp-action="Index">Registro Administradores</a>
-                             </li>
-                             <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="PagoQrs" asp-action="Index">
-                                    <i class="fa fa-qrcode" style="color: #6AC9AA;"></i>
-                                        Pago QR
+                                <a class="nav-link" asp-area="" asp-controller="PersonAdmin" asp-action="Index">
+                                    <i class="fa fa-vcard-o" style="color: #6AC9AA;"></i>
+                                    Registro Administradores
                                     <span class="visually-hidden">(current)</span>
-                            </a>
-                             </li>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="PagoQrs" asp-action="Index">
+                                    <i class="fa fa-qrcode" style="color: #6AC9AA;"></i>
+                                    Pago QR
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
                         }
-   
+
                     </ul>
                     <div class="d-flex">
                         @if (!User.IsInRole("Admin") && !User.IsInRole("Client") && !User.IsInRole("SuperAdmin") && !User.IsInRole("Professional"))
                         {
                             <a class="btn btn-warning me-sm-2" type="submit" asp-controller="Login" asp-action="Index"> Iniciar Sesión </a>
                             <a class="btn btn-success btn-rounded text-white me-sm-2" type="submit" asp-controller="CustomerUser" asp-action="Create">Registrarse!</a>
-                             <a class="btn btn-success btn-rounded text-white " type="submit" asp-controller="ProfessionalPostulation" asp-action="Index">Postular</a>
-
                         }
 
                         @if (User.IsInRole("Admin") || User.IsInRole("Client") || User.IsInRole("SuperAdmin") || User.IsInRole("Professional"))
@@ -116,13 +160,13 @@
 
                                     <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                     <div class="dropdown-menu" style="margin-left:-120px;" aria-labelledby="btnGroupDrop2">
-                                        <a class="dropdown-item" asp-action="Profile" asp-controller="Users"    ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mi Perfil</font></font></a>
+                                        <a class="dropdown-item" asp-action="Profile" asp-controller="Users"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mi Perfil</font></font></a>
                                         <a class="dropdown-item" asp-action="LogOut" asp-controller="Login"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cerrar Sesión</font></font></a>
                                     </div>
                                 </div>
                             </div>
                         }
-                        
+
                     </div>
                 </div>
             </div>
@@ -130,17 +174,17 @@
 
 
 
-        
+
     </header>
     <div class="container">
-        <main role="main" >
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
     <section class="" id="footer">
-        
-            <footer class="text-center text-white" style="background-color: #2f4153;">
+
+        <footer class="text-center text-white" style="background-color: #2f4153;">
             @if (!User.IsInRole("Admin") && !User.IsInRole("Client") && !User.IsInRole("SuperAdmin") && !User.IsInRole("Professional"))
             {
                 <div class="container p-4 pb-0">
@@ -154,7 +198,7 @@
                     </section>
                 </div>
             }
-            
+
 
             <div class="text-center p-3" style="background-color: rgba(44, 43, 43, 0.2);">
                 © 2023 Copyright:
@@ -175,8 +219,8 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 
-    
-    
-    
+
+
+
 </body>
 </html>

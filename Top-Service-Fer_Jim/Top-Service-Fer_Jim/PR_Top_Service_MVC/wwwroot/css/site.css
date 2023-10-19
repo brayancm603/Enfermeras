@@ -40,11 +40,17 @@ body {
 }
 .description {
     padding: 20px;
+    background-color: #eaeff4;
+    margin:5px;
 }
 
 .carousel img {
     width: 100%;
     height: auto;
+}
+.imageDetail {
+    width: 200px;
+    height: 200px;
 }
 /* Establece el límite mínimo y máximo de ancho */
 @media (min-width: 750px) and (max-width: 1750px) {
@@ -71,11 +77,15 @@ body {
             width: 100%;
             height: auto;
         }
+    .imageDetail{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 
 /* Establece el límite mínimo de ancho a 360px */
-@media (min-width: 350px) and (max-width: 550px) {
+@media (min-width: 350px) and (max-width: 750px) {
     .container1 {
         display: flex;
         justify-content: center;
@@ -84,6 +94,10 @@ body {
 
     .description, .carousel {
         width: 100%;
+    }
+    .imageDetail {
+        width: 50px;
+        height: 50px;
     }
 }
 

@@ -2,7 +2,7 @@
 
 <h1>Postulaciones pendientes</h1>
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -40,7 +40,11 @@
             </td>
 
             <td>
-                    <a asp-action="ViewPostulation" asp-route-id="@item.IdPostulation">Ver</a>
+                    <a asp-action="ViewPostulation" asp-route-id="@item.IdPostulation" class="btn btn-success">
+                        <i class="fa fa-eye" style="color: #FFFFFF;">
+                        </i>
+                        <span class="visually-hidden">(current)</span>
+                    </a>
             </td>
         </tr>
 }
