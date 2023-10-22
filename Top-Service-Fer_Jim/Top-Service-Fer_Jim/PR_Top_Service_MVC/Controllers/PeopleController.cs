@@ -30,7 +30,7 @@ namespace PR_Top_Service_MVC.Controllers
 
         public async Task<IActionResult> ProfessionalArea(int id)
         {
-            IQueryable<Postulation> person = from Postulation in _context.Postulations.Include(a => a.IdProfessionalNavigation.IdProfesionalNavigation)
+            IQueryable<Postulation> person = from Postulation in _context.Postulations.Include(a => a.IdProfessionalNavigation.IdPersonNavigation)
                                         join Profesional in _context.Profesionals on Postulation.IdProfessional equals Profesional.IdProfesional
                                         join AreaAttribute in _context.AreaProfesional on Profesional.IdProfesional equals AreaAttribute.IdProfesional
                                         join JobArea in _context.JobArea on AreaAttribute.idArea equals JobArea.idArea

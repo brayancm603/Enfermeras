@@ -12,14 +12,16 @@ namespace PR_Top_Service_MVC.Models
             Services = new HashSet<Service>();
             Quotations = new HashSet<Quotation>();
             AreaProfesionals = new HashSet<AreaProfesional>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int IdProfesional { get; set; }
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         [Required(ErrorMessage = "La fecha de nacimiento es obligatoria")]
         public DateTime Birthdate { get; set; }
-        public double? Rating { get; set; }
-        public virtual Person? IdProfesionalNavigation { get; set; } = null!;
+      
+        public virtual Person? IdPersonNavigation { get; set; } = null!;
+        public virtual ICollection<Rating>? Ratings { get; set; }
         public virtual ICollection<Postulation>? Postulations { get; set; }
         public virtual ICollection<Service>? Services { get; set; }
         public virtual ICollection<Quotation> Quotations { get; set; }

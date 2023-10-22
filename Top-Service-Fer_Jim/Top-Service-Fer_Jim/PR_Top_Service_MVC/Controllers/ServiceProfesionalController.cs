@@ -26,7 +26,7 @@ namespace PR_Top_Service_MVC.Controllers
         public async Task<IActionResult> Index(int? id)
         {
             int x = UserConfig.userLogin.IdUser;
-            var topServiceBDOContext = _context.Services.Include(s => s.IdAdminNavigation).Include(s => s.IdProfessionalNavigation).Where(s => s.IdProfessional == x).Where(s=>s.IdService==id); 
+            var topServiceBDOContext = _context.Services.Include(s => s.IdAdminNavigation).Include(s => s.ProfesionalS).Where(s => s.IdProfessional == x).Where(s=>s.IdService==id); 
             return View(await topServiceBDOContext.ToListAsync());
         }
 
@@ -40,7 +40,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
-                .Include(s => s.IdProfessionalNavigation)
+                .Include(s => s.ProfesionalS)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
             {
@@ -169,7 +169,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
-                .Include(s => s.IdProfessionalNavigation)
+                .Include(s => s.ProfesionalS)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
             {

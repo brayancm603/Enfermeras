@@ -6,7 +6,7 @@
 
 <h1>Servicios</h1>
 
-<a asp-controller="PagoQrs" asp-action="Index">QR Pagar Servicio</a>|
+<a asp-controller="PagoQrs" asp-action="Index" class="btn btn-success">QR Pagar Servicio</a>|
 
 <table class="table table-striped">
     <thead>
@@ -47,6 +47,13 @@
                         
                     </button>
                 </td>
+                @if (item.Status_Service == 2 && item.Commented == null)
+                {
+                    <td>
+                        <a class="btn btn-info" asp-action="Create" asp-controller="Rating" asp-route-id="@item.IdService">Comentar</a>
+                    </td>
+                }
+
             </tr>
         }
     </tbody>

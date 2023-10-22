@@ -31,13 +31,13 @@ namespace PR_Top_Service_MVC.Models
         public virtual DbSet<Receipt> Receipts { get; set; } = null!;
         public virtual DbSet<Service> Services { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
-       
+        public virtual DbSet<Rating> Ratings { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("workstation id=TopServiceDB.mssql.somee.com;packet size=4096;user id=TopServiceDB;pwd=Univalle;data source=TopServiceDB.mssql.somee.com;persist security info=False;initial catalog=TopServiceDB;Encrypt=False;");
+                optionsBuilder.UseSqlServer("Server=MSI\\SQLEXPRESS;Database=TopService;User=sa;Password=univalle;Trusted_Connection=True;Encrypt=False;");
             }
         }
 
@@ -91,7 +91,34 @@ namespace PR_Top_Service_MVC.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Quotation_JobArea");
             });
-           
+            modelBuilder.Entity<Rating>(entity =>
+            {
+                entity.HasKey(e => e.IdRating);
+
+                entity.ToTable("Rating");
+
+                entity.Property(e => e.rating)
+                    .HasColumnName("Rating")
+                    .IsRequired();
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+                entity.Property(e => e.IdCostumer).HasColumnName("IdCostumer");
+                entity.Property(e => e.IdProfesional).HasColumnName("IdProfesional");
+
+                entity.HasOne(d => d.IdCostumerNavigation)
+                    .WithMany(p => p.Ratings)
+                    .HasForeignKey(d => d.IdCostumer)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Rating_Costumer");
+
+                entity.HasOne(d => d.IdProfesionalNavigation)
+                    .WithMany(p => p.Ratings)
+                    .HasForeignKey(d => d.IdProfesional)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Rating_Profesional");
+            });
             modelBuilder.Entity<Costumer>(entity =>
             {
                 entity.HasKey(e => e.IdCostumer);
@@ -274,7 +301,7 @@ namespace PR_Top_Service_MVC.Models
              
                 
 
-                entity.HasOne(d => d.IdProfesionalNavigation)
+                entity.HasOne(d => d.IdPersonNavigation)
                     .WithOne(p => p.Profesional)
                     .HasForeignKey<Profesional>(d => d.IdProfesional)
                     .OnDelete(DeleteBehavior.ClientSetNull)
@@ -382,7 +409,7 @@ namespace PR_Top_Service_MVC.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Service_Admin");
 
-                entity.HasOne(d => d.IdProfessionalNavigation)
+                entity.HasOne(d => d.ProfesionalS)
                     .WithMany(p => p.Services)
                     .HasForeignKey(d => d.IdProfessional)
                     .OnDelete(DeleteBehavior.ClientSetNull)
