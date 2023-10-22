@@ -9,373 +9,373 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PR_Top_Service_MVC
 build_property.RootNamespace = PR_Top_Service_MVC
-build_property.ProjectDir = D:\Univalle\Sexto Semestre\Proyecto Sistemas 3\Unidad 1\Enfermeras\Top-Service-Fer_Jim\Top-Service-Fer_Jim\PR_Top_Service_MVC\
+build_property.ProjectDir = D:\Univalle\Carpeta Sexto Semestre\Proyecto de Sistemas\Unidad 1\Enfermeras\Top-Service-Fer_Jim\Top-Service-Fer_Jim\PR_Top_Service_MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Univalle\Sexto Semestre\Proyecto Sistemas 3\Unidad 1\Enfermeras\Top-Service-Fer_Jim\Top-Service-Fer_Jim\PR_Top_Service_MVC
+build_property.MSBuildProjectDirectory = D:\Univalle\Carpeta Sexto Semestre\Proyecto de Sistemas\Unidad 1\Enfermeras\Top-Service-Fer_Jim\Top-Service-Fer_Jim\PR_Top_Service_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Calendar/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Calendar/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ConfirmPostulation/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ConfirmPostulation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybVBvc3R1bGF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ConfirmPostulation/ViewPostulation.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ConfirmPostulation/ViewPostulation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybVBvc3R1bGF0aW9uXFZpZXdQb3N0dWxhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJVc2VyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJVc2VyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJVc2VyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJVc2VyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/CustomerUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ForgotPassword/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ForgotPassword/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9yZ290UGFzc3dvcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Home/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Home/Privacy.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/DetailsImage.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/DetailsImage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXERldGFpbHNJbWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Images/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXJlYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXJlYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXJlYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXJlYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/JobArea/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXJlYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Login/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PagoQrs/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PagoQrs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/ProfessionalArea.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/People/ProfessionalArea.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXFByb2Zlc3Npb25hbEFyZWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/PersonAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Postulation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxVc2VyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxVc2VyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxVc2VyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxVc2VyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfesionalUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Profesional/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfessionalPostulation/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ProfessionalPostulation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUG9zdHVsYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/ConfirmQuotation.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/ConfirmQuotation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXENvbmZpcm1RdW90YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/StateQuotation.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Quotation/StateQuotation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGF0aW9uXFN0YXRlUXVvdGF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Comments.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Comments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXENvbW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Ranking.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Rating/Ranking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXFJhbmtpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVByb2Zlc2lvbmFsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVByb2Zlc2lvbmFsXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVByb2Zlc2lvbmFsXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVByb2Zlc2lvbmFsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceProfesional/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVByb2Zlc2lvbmFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Receipt.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/ServiceReceipt/Receipt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVJlY2VpcHRcUmVjZWlwdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/ServiceByClient.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/ServiceByClient.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTZXJ2aWNlQnlDbGllbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/ServiceFinalized.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Service/ServiceFinalized.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTZXJ2aWNlRmluYWxpemVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/Error.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Create.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Delete.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Details.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Edit.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Index.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Profile.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Users/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/_ViewImports.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/_ViewStart.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Sexto Semestre/Proyecto Sistemas 3/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/_Layout.cshtml]
+[D:/Univalle/Carpeta Sexto Semestre/Proyecto de Sistemas/Unidad 1/Enfermeras/Top-Service-Fer_Jim/Top-Service-Fer_Jim/PR_Top_Service_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y8biui5zd6
