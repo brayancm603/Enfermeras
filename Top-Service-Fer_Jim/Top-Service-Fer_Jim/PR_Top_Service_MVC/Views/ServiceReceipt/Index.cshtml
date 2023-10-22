@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Servicios por Confirmar</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+
+            <th>
+                Profesional Encargado
+            </th>
+            <th>
+                Descripcion del problema
+            </th>
+            <th>
+                Fecha para inciar el servicio
+            </th>
+           
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfesionalS.IdPersonNavigation.Name)
+                @Html.DisplayFor(modelItem => item.ProfesionalS.IdPersonNavigation.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+           
+           
+                <td>
+                    <a asp-action="EditService" asp-controller="ServiceReceipt" asp-route-id="@item.IdService">Confirmar servicio</a> |
+
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

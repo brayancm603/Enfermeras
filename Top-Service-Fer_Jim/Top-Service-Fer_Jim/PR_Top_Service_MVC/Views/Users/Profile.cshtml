@@ -1,0 +1,54 @@
+﻿@using PR_Top_Service_MVC.Controllers;
+@model IEnumerable<PR_Top_Service_MVC.Models.Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="text-center">
+    <h1 class="fw-bold">PERFIL</h1>
+</div>
+
+
+
+ <div class="d-flex justify-content-center">
+@foreach (var item in Model) {
+      
+         <div class="card m-4 bg-dark" style="width:500px"  >
+            <img class="card-img-top  mx-auto d-block" src="~/images/user.png" alt="Card image cap" style="width: 100px ; height: 100px;">
+            <br>
+            <div class="card-body text-center">
+                <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Name)</h5>
+                <h5 class="card-title">   @Html.DisplayFor(modelItem => item.LastName)</h5>
+                 <h5 class="card-title"> @Html.DisplayFor(modelItem => item.SecondLastName)</h5>
+                  <h5 class="card-title"> @Html.DisplayFor(modelItem => item.IdDepartmentNavigation.Name)</h5>
+                   <h5 class="card-title"> @Html.DisplayFor(modelItem => item.User.Email)</h5>
+            </div>
+
+            @if (User.IsInRole("Client"))
+            {
+                <div class="card-footer">
+                <a asp-action="Edit" asp-controller="CustomerUser" asp-route-id=@UserConfig.userLogin.IdUser >Editar Perfil</a> 
+                </div>
+            }
+            @if(User.IsInRole("Admin")){
+                 <div class="card-footer">
+                <a asp-action="Edit" asp-controller="PersonAdmin" asp-route-id=@UserConfig.userLogin.IdUser >Editar Perfil</a> 
+            </div>
+            }
+            @if(User.IsInRole("Professional")){
+                <div class="card-footer">
+                <a asp-action="Edit" asp-controller="ProfesionalUser" asp-route-id=@UserConfig.userLogin.IdUser >Editar Perfil</a> 
+            </div>
+            }
+            
+            
+             
+            <div class="card-footer">
+                <a asp-action="Index" asp-controller="Home" >Volver</a> 
+            </div>
+        </div>
+           
+     
+
+}
+   </div>   

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Image>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de comprobantes</h1>
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Imagen del servicio
+            </th>
+            <th>
+                Descripcion del servicio
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="@item.Imaged"  width="200" height="200"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdServiceNavigation.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdImages" class="btn btn-success">
+                    <i class="fa fa-pencil fa-2x" style="color: #FFFFFF;"></i>
+                    Editar
+                </a>
+                |
+                <a asp-action="Delete" asp-route-id="@item.IdImages" class="btn btn-danger">
+                        <i class="fa fa-trash fa-2x" style="color: #FFFFFF;"></i>
+                    Eliminar
+                </a>
+            </td>
+            </tr>
+}
+    </tbody>
+</table>
