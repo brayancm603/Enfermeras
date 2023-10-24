@@ -7,9 +7,10 @@
 <h1>Administradores</h1>
 
 <p>
-    <a asp-action="Create">Registrar nuevo</a>
+    <a asp-action="Create" class="btn btn-success">Registrar nuevo</a>
 </p>
-<table class="table">
+<div class="tabla-contenedor">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -58,15 +59,15 @@
             </td>
             
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.idPAU">Editar</a> |
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.idPAU">Editar</a> |
                     
-                    <a asp-action="Delete" asp-route-id="@item.idPAU">Eliminar</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.idPAU">Eliminar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
-
+</div>
 <br />
 <br />
 <br />

@@ -40,7 +40,7 @@ namespace PR_Top_Service_MVC.Controllers
             }
 
             var profesional = await _context.Profesionals
-                .Include(p => p.IdProfesionalNavigation)
+                .Include(p => p.IdPersonNavigation)
                 .FirstOrDefaultAsync(m => m.IdProfesional == id);
             if (profesional == null)
             {
@@ -138,7 +138,7 @@ namespace PR_Top_Service_MVC.Controllers
             }
 
             var profesional = await _context.Profesionals
-                .Include(p => p.IdProfesionalNavigation)
+                .Include(p => p.IdPersonNavigation)
                 .FirstOrDefaultAsync(m => m.IdProfesional == id);
             if (profesional == null)
             {

@@ -1,43 +1,45 @@
 ﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
 
 @{
-    var fullname = Model.FirstOrDefault().IdProfessionalNavigation.IdProfesionalNavigation.Name + " " + Model.FirstOrDefault().IdProfessionalNavigation.IdProfesionalNavigation.LastName;
+    var fullname = Model.FirstOrDefault().IdProfessionalNavigation.IdPersonNavigation.Name + " " + Model.FirstOrDefault().IdProfessionalNavigation.IdPersonNavigation.LastName;
 }
 
-<h1>Postulacion</h1>
+<h1 class="mt-4">Postulación</h1>
 
 <hr />
-<div class="row">
+
+<div class="row mt-4">
     <div class="col-md-4">
-            
-            <div >
-                <label class="control-label">Titulos Profesionales</label>
-                <div>@Model.FirstOrDefault().ProfessionalTitles</div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Información del Profesional</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Títulos Profesionales:</strong>
+                        @Model.FirstOrDefault().ProfessionalTitles
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Certificaciones:</strong>
+                        @Model.FirstOrDefault().Certification
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Experiencia Laboral:</strong>
+                        @Model.FirstOrDefault().WorkExperience
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Dirección:</strong>
+                        @Model.FirstOrDefault().Address
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Profesional:</strong>
+                        @fullname
+                    </li>
+                </ul>
             </div>
-            <div >
-                <label class="control-label">Certicaciones</label>
-                <label> @Model.FirstOrDefault().Certification</label>
-            </div>
-            <div >
-                <label class="control-label">Experiencia Laboral</label>
-                <label> @Model.FirstOrDefault().WorkExperience</label>
-            </div>
-
-            <div >
-                <label class="control-label">Direccion</label>
-                <label> @Model.FirstOrDefault().Address</label>
-            </div>
-
-            <div >
-                <label class="control-label" >Profesional</label>
-                <label> @fullname</label>
-            </div>
-
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="otro" asp-route-id="@Model.First().IdPostulation" class="btn btn-primary">Aceptar postulacion</a>
-
-    
+<div class="mt-4">
+    <a asp-action="otro" asp-route-id="@Model.First().IdPostulation" class="btn btn-primary">Aceptar Postulación</a>
 </div>

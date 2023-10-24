@@ -1,83 +1,89 @@
 ﻿@model PR_Top_Service_MVC.Models.PersonAdmin
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Create";
 }
 
-<h1>Editar</h1>
-
-<h4>Administrador</h4>
+<h1>Registro de Postulantes</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+
+    <div class="col-md-6">
+        <form asp-action="Create">
             <div asp-validation-summary="All" class="text-danger"></div>
-            <input type="hidden" asp-for="IdPerson" />
             <div class="form-group">
-                <label  class="control-label">Numero de celular</label>
-                <input asp-for="CelphoneNumber" class="form-control" value="@ViewBag.admin.CelphoneNumber" type="number" maxlength="7" />
-                <span asp-validation-for="CelphoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label  class="control-label"> Fehca de nacimiento</label>
-                <input type="datetime" asp-for="Birthdate" class="form-control" value="@ViewBag.admin.Birthdate" />
-                <span asp-validation-for="Birthdate" class="text-danger"></span>
-            </div>
-            <div class="form-group" hidden>
-                <label asp-for="IdPerson" class="control-label"></label>
-                <input asp-for="IdPerson" class="form-control" />
-                <span asp-validation-for="IdPerson" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label  class="control-label">Nombre</label>
-                <input asp-for="Name" class="form-control" value="@ViewBag.person.Name" />
+                <label class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label  class="control-label">Apellido Paterno</label>
-                <input asp-for="LastName" class="form-control" value="@ViewBag.person.LastName" />
+                <label class="control-label">Apellido Paterno</label>
+                <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label  class="control-label">Apellido Materno</label>
-                <input asp-for="SecondLastName" class="form-control" value="@ViewBag.person.SecondLastName" />
+                <label class="control-label">Apellido Materno</label>
+                <input asp-for="SecondLastName" class="form-control" />
                 <span asp-validation-for="SecondLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Departamento</label>
+                <select asp-for="IdDepartment" class="form-control" asp-items="ViewBag.IdDepartment"></select>
             </div>
 
             <div class="form-group">
-                <label asp-for="IdDepartment" class="control-label"></label>
-                @Html.DropDownListFor(model => model.IdDepartment, (SelectList)ViewData["IdDepartment"], new { @class = "form-control" })
-                <span asp-validation-for="IdDepartment" class="text-danger"></span>
+                <label class="control-label">Fecha de Nacimiento</label>
+                <input asp-for="Birthdate" class="form-control" />
+                <span asp-validation-for="Birthdate" class="text-danger"></span>
             </div>
-           
-            <div class="form-group" hidden>
-                <label asp-for="IdUser" class="control-label"></label>
-                <input asp-for="IdUser" class="form-control" />
-                <span asp-validation-for="IdUser" class="text-danger"></span>
-            </div>
-            <div class="form-group" >
-                <label  class="control-label">Correo</label>
-                <input asp-for="Email" class="form-control" value="@ViewBag.user.Email" />
+
+            <div class="form-group">
+                <label class="control-label">Correo Electrónico</label>
+                <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group" hidden>
-                <label  class="control-label">Contraseña</label>
-                <input asp-for="Password" class="form-control" value="@ViewBag.user.Password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group"hidden>
-                <label asp-for="Role" class="control-label"></label>
-                <input asp-for="Role" class="form-control" value="Admin"/>
+                <label class="control-label">Correo Electrónico</label>
+                <input asp-for="Role" class="form-control" value="Admin" />
                 <span asp-validation-for="Role" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <label class="control-label">Numero de celular</label>
+                <input asp-for="CelphoneNumber" class="form-control">
+                <span asp-validation-for="CelphoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Contraseña</label>
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" class="form-control" />
+                <span id="passwordError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
             </div>
         </form>
     </div>
+
 </div>
 @section scripts {
     <script>
+
+        const passwordField = document.querySelector('input[name="Password"]');
+        const confirmPasswordField = document.getElementById('confirmPassword');
+        const passwordError = document.getElementById('passwordError');
+
+        confirmPasswordField.addEventListener('input', () => {
+            if (passwordField.value !== confirmPasswordField.value) {
+                passwordError.textContent = 'Las contraseñas no coinciden';
+            } else {
+                passwordError.textContent = '';
+            }
+        });
         // Obtener el campo de fecha de nacimiento
         var birthdateInput = document.getElementById('birthdate');
 
@@ -101,8 +107,21 @@
                 birthdateInput.setCustomValidity('');
             }
         });
+
+
+
     </script>
 }
 
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

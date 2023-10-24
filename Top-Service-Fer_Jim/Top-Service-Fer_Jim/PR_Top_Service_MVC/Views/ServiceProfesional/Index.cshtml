@@ -7,13 +7,22 @@
 <h1>Mis Servicios</h1>
 
 
-<table class="table">
+<table class="table table-striped" style=" overflow-x: auto;">
     <thead>
         <tr>
-            <th>Descripcion</th>
-            <th>Fecha</th>
-            <th>Fecha de Inicio</th>
-            
+            <th>
+                <i class="fa fa-file-text-o" style="color: black;"></i>
+                Descripcion
+            </th>
+            <th>
+                <i class="fa fa-calendar-o" style="color: black;"></i>
+                Fecha
+            </th>
+            <th>
+                <i class="fa fa-calendar-check-o" style="color: black;"></i>
+                Fecha de Inicio
+            </th>
+
             <th hidden>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
@@ -42,7 +51,7 @@
                 @Html.DisplayNameFor(model => model.IdAdminNavigation)
             </th>
             <th hidden>
-                @Html.DisplayNameFor(model => model.IdProfessionalNavigation)
+                @Html.DisplayNameFor(model => model.ProfesionalS)
             </th>
             <th></th>
         </tr>
@@ -51,7 +60,7 @@
         @foreach (var item in Model)
         {
             <tr>
-               
+
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
@@ -64,7 +73,7 @@
                 <td hidden>
                     @Html.DisplayFor(modelItem => item.Status_Service)
                 </td>
-                <td >
+                <td>
                     @Html.DisplayFor(modelItem => item.DateTime_On_Service)
                 </td>
                 <td hidden>
@@ -80,9 +89,9 @@
                     @Html.DisplayFor(modelItem => item.IdAdminNavigation.IdAdmin)
                 </td>
                 <td hidden>
-                    @Html.DisplayFor(modelItem => item.IdProfessionalNavigation.IdProfesional)
+                    @Html.DisplayFor(modelItem => item.ProfesionalS.IdProfesional)
                 </td>
-                @if (item.Status_Service==null)
+                @if (item.Status_Service == null)
                 {
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.IdService">Empezar</a>
@@ -93,10 +102,10 @@
                 {
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.IdService">Terminar</a>
+                        <a asp-action="Create" asp-controller="Images" asp-route-id="@item.IdService">Subir Comprobantes</a>
                     </td>
+
                 }
-                
-                
             </tr>
         }
     </tbody>
@@ -109,13 +118,11 @@
 <script>
 
     function iniciarMap() {
-        var coord = { lat: 40.7128, lng: -74.0060 };
+        var coord = { lat: -17.401260412227117, lng: -66.15445695062625 };
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
+            zoom: 13,
             center: coord
         });
-
-
 
         var jsModel = @Html.Raw(Json.Serialize(Model));
 

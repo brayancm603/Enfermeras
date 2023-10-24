@@ -23,8 +23,8 @@ namespace PR_Top_Service_MVC.Controllers
         // GET: ServiceReceipt
         public async Task<IActionResult> Index()
         {
-            return _context.ServiceReceipt != null ?
-                        View(await _context.ServiceReceipt.ToListAsync()) :
+            return _context.Services != null ?
+                        View(await _context.Services.Where(x => x.Status == 0).Include(x=>x.ProfesionalS.IdPersonNavigation).ToListAsync()) :
                         Problem("Entity set 'TopServiceBDOContext.ServiceReceipt'  is null.");
         }
 
@@ -78,13 +78,12 @@ namespace PR_Top_Service_MVC.Controllers
             {
                 Service s = new()
                 {
-                    IdAdmin = UserConfig.userLogin.IdUser,
-                    IdProfessional = id,
+                    IdProfessional = UserConfig.userLogin.IdUser,
                     IdCostumer = serviceReceipt.IdCostumer,
-                    
+
                     Description = serviceReceipt.Description,
                     Date = serviceReceipt.Date,
-                    Status = 1,
+                    Status = 0,
                     deleted = 0
                 };
                 _context.Add(s);
@@ -105,7 +104,36 @@ namespace PR_Top_Service_MVC.Controllers
           
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", serviceReceipt.IdAdmin);
             ViewData["IdCostumer"] = new SelectList(_context.Costumers.OrderBy(x => x.Ci), "IdCostumer", "Ci", serviceReceipt.IdCostumer);
-            return RedirectToAction("Index", "Service");
+            return RedirectToAction("Index", "Home");
+        }
+
+        public async Task<IActionResult> EditService(int id)
+        {
+
+
+            if (ModelState.IsValid)
+            {
+
+                var datos = await _context.Services.FindAsync(id);
+                datos.IdService = id;
+                datos.IdCostumer = datos.IdCostumer;
+                datos.IdProfessional = datos.IdProfessional;
+                datos.Description = datos.Description;
+                datos.Status = 1;
+                datos.IdAdmin = UserConfig.userLogin.IdUser;
+                datos.Date = datos.Date;
+                datos.Status_Service = datos.Status_Service;
+                datos.DateTime_On_Service = datos.DateTime_On_Service;
+                datos.DateTime_Off_Service = datos.DateTime_Off_Service;
+                datos.Latitude = datos.Latitude;
+                datos.Longitude = datos.Longitude;
+                datos.deleted = datos.deleted;
+                _context.Update(datos);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("Index", "ServiceReceipt");
+            }
+            return RedirectToAction("Index", "ServiceReceipt");
         }
 
         // GET: ServiceReceipt/Edit/5

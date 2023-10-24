@@ -22,7 +22,7 @@ namespace PR_Top_Service_MVC.Controllers
 
         public IActionResult ViewPostulation(int id)
         {
-            IQueryable<Postulation> person = from Postulation in _context.Postulations.Include(a => a.IdProfessionalNavigation).Include(a => a.IdProfessionalNavigation.IdProfesionalNavigation)
+            IQueryable<Postulation> person = from Postulation in _context.Postulations.Include(a => a.IdProfessionalNavigation).Include(a => a.IdProfessionalNavigation.IdPersonNavigation)
                                              join Profesional in _context.Profesionals on Postulation.IdProfessional equals Profesional.IdProfesional
                                              join Person in _context.People on Profesional.IdProfesional equals Person.IdPerson
                                              where Postulation.Status == 1 && Postulation.IdPostulation == id

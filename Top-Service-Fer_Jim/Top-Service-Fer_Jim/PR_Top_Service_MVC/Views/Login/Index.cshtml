@@ -10,16 +10,24 @@
 </div>
 
 <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-    <h2 class="text-center mt-4 mb-4 font-weight-bold" style="text-transform: uppercase;">Login</h2>
+    <h2 class="text-center mt-4 mb-4 font-weight-bold" style="text-transform: uppercase;">Iniciar Sesion</h2>
     <form asp-action="Index">
         <div class="form-row">
             <div class="form-group col-md-12">
-                <label>Correo </label>
+                <label>
+                    <i class="fa fa-envelope-o" style="color: #6AC9AA; margin-right:2px;"></i>
+                    Correo electrónico
+                    <span class="visually-hidden">(current)</span>
+                </label>
                 <input type="email" class="form-control" placeholder="Ingresa tu Correo"
                        required="" asp-for="Email">
             </div>
             <div class="form-group col-md-12">
-                <label>Contraseña</label>
+                <label>
+                    <i class="fa fa-unlock-alt" style="color: #6AC9AA; margin-right:2px;"></i>
+                    Contraseña
+                    <span class="visually-hidden">(current)</span>
+                </label>
                 <input type="password" class="form-control" placeholder="Ingresa tu contraseña"
                        required="" asp-for="Password">
             </div>
@@ -31,7 +39,7 @@
             </div>
         </div>
         <div class="mt-2 mb-3">
-            <button class="btn btn-primary full-width" type="submit">Login</button>
+            <button class="btn btn-primary full-width" type="submit">Iniciar Sesion</button>
         </div>
     </form>
 </div>

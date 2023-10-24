@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Rating>
+
+<h1>Comentarios</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">@item.Description</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

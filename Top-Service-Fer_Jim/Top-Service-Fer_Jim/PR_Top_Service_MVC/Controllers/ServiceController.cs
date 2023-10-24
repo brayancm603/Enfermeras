@@ -24,12 +24,20 @@ namespace PR_Top_Service_MVC.Controllers
         // GET: Service
         public async Task<IActionResult> Index()
         {
-            IQueryable<Service> service = from Service in _context.Services.Include(a=>a.IdProfessionalNavigation).Include(a=>a.IdProfessionalNavigation.IdProfesionalNavigation)
-
+            IQueryable<Service> service = from Service in _context.Services.Include(a=>a.ProfesionalS.IdPersonNavigation)
+                                      
                                           where Service.Status == 1 && Service.IdAdmin == UserConfig.userLogin.IdUser
                                           select Service;
 
             return View(await service.ToListAsync());
+        }
+
+        //GET: Service Finalized
+        public IActionResult ServiceFinalized()
+        {
+            var services = _context.Services
+                                .Where(s => s.Status_Service == 2);
+            return View(services.ToList());
         }
 
         // GET: Service/Details/5
@@ -42,7 +50,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
-                .Include(s => s.IdProfessionalNavigation)
+                .Include(s => s.ProfesionalS)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
             {
@@ -148,7 +156,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
-                .Include(s => s.IdProfessionalNavigation)
+                .Include(s => s.ProfesionalS)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
             {

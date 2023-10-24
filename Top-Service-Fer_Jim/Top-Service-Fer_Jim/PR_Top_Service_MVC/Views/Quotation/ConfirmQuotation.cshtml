@@ -6,64 +6,72 @@
 
 <h1>Solicitudes de Cotizacion Pendientes</h1>
 
+<div class="tabla-contenedor">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Nombre
+                </th>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Apellido Paterno
+                </th>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Apellido Materno
+                </th>
+                <th>
+                    <i class="fa fa-map-marker" style="color: black;"></i>
+                    Ubicacion
+                </th>
+                <th>
+                    <i class="fa fa-calendar-o" style="color: black;"></i>
+                    Fecha de solicitud
+                </th>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Nombre 
-            </th>
-             <th>
-                Apellido Paterno
-            </th>
-             <th>
-                Apellido Materno
-            </th>
-            <th>
-               Ubicacion
-            </th>
-            <th>
-                Fecha de solicitud
-            </th>
-            
-            <th>
-                Descripcion del problema
-            </th>
-            
-           
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.SecondLastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            
-            
-            <td>
-                <a asp-action="Accept" asp-route-id="@item.IdQuotation">Aceptar</a> |
-                <a asp-action="Reject" asp-route-id="@item.IdQuotation">Rechazar</a> |
-               
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                <th>
+                    <i class="fa fa-file-text-o" style="color: black;"></i>
+                    Descripcion del problema
+                </th>
+
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.SecondLastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+
+
+                    <td>
+                        <a asp-action="Accept" asp-route-id="@item.IdQuotation" class="btn btn-success">Aceptar</a> |
+                        <a asp-action="Reject" asp-route-id="@item.IdQuotation" class="btn btn-success">Rechazar</a> |
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

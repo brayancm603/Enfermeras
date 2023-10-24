@@ -7,22 +7,26 @@
 <h1>Solicitudes de Cotizacion</h1>
 
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
+                <i class="fa fa-user" style="color: black;"></i>
                 Nombre 
             </th>
             
             <th>
+                <i class="fa fa-calendar-o " style="color: black;"></i>
                 Fecha de solicitud
             </th>
             
             <th>
+                <i class="fa fa-file-text" style="color: black;"></i>
                 Descripcion del problema
             </th>
 
               <th>
+                <i class="fa fa-circle-o " style="color: black;"></i>
                 Estado
             </th>
            
@@ -33,11 +37,11 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.Name)
+                    @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdPersonNavigation.Name)
             
-                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.LastName)
+                    @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdPersonNavigation.LastName)
             
-                @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdProfesionalNavigation.SecondLastName)
+                    @Html.DisplayFor(modelItem => item.IdProfesionalNavigation.IdPersonNavigation.SecondLastName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Date)

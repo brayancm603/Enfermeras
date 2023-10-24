@@ -10,7 +10,7 @@ namespace PR_Top_Service_MVC.Models
         Aceptado,
         En_Proceso,
     }
-    public partial class Service
+    public partial class Service 
     {
 
         public static string ReturnToStatus(int num)
@@ -19,7 +19,7 @@ namespace PR_Top_Service_MVC.Models
         }
 
         public int IdService { get; set; }
-        public int IdAdmin { get; set; }
+        public int? IdAdmin { get; set; }
         public int IdProfessional { get; set; }
         
        
@@ -35,11 +35,14 @@ namespace PR_Top_Service_MVC.Models
         public double? Longitude { get; set; }
 
         public byte deleted { get; set; }
-
+        public string? Commented { get; set; }
+       
+        public virtual ICollection<Rating>? Ratings { get; set; }
         public virtual Admin? IdAdminNavigation { get; set; } = null!;
-        public virtual Profesional? IdProfessionalNavigation { get; set; } = null!;
+        public virtual Profesional? ProfesionalS { get; set; } = null!;
         public virtual Costumer? IdCostumerNavigation { get; set; } = null!;
         public virtual Receipt? Receipt { get; set; }
-        
+        public virtual ICollection<Image> Images { get; set; } = new List<Image>();
+
     }
 }

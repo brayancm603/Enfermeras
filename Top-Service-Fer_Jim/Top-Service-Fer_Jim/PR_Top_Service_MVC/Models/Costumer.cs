@@ -9,6 +9,7 @@ namespace PR_Top_Service_MVC.Models
         {
             Quotations = new HashSet<Quotation>();
             Services = new HashSet<Service>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int IdCostumer { get; set; }
@@ -17,5 +18,6 @@ namespace PR_Top_Service_MVC.Models
         public virtual Person IdCostumerNavigation { get; set; } = null!;
         public virtual ICollection<Quotation> Quotations { get; set; }
         public virtual ICollection<Service> Services { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }

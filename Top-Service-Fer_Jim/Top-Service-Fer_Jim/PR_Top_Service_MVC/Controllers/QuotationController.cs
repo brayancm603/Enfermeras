@@ -45,7 +45,7 @@ namespace PR_Top_Service_MVC.Controllers
 
         public async Task<IActionResult> StateQuotation()
         {
-            IQueryable<Quotation> person = from Quotation in _context.Quotations.Include(a => a.IdProfesionalNavigation).Include(a => a.IdProfesionalNavigation.IdProfesionalNavigation)
+            IQueryable<Quotation> person = from Quotation in _context.Quotations.Include(a => a.IdProfesionalNavigation).Include(a => a.IdProfesionalNavigation.IdPersonNavigation)
                                            join Costumer in _context.Costumers on Quotation.IdCostumer equals Costumer.IdCostumer
                                            join Person in _context.People on Costumer.IdCostumer equals Person.IdPerson
 
