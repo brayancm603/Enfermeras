@@ -1,0 +1,141 @@
+﻿@model PR_Top_Service_MVC.Models.ProfessionalPostulation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 >Registro de Postulantes</h1>
+<hr />
+<div class="row">
+
+    <div class="col-md-6">
+        <form asp-action="CreateProfessionalPostulation" id="registrationForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden>
+                <label asp-for="IdPerson" class="control-label"></label>
+                <input asp-for="IdPerson" class="form-control" />
+                <span asp-validation-for="IdPerson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Apellido Paterno</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Apellido Materno</label>
+                <input asp-for="SecondLastName" class="form-control" />
+                <span asp-validation-for="SecondLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Departamento</label>
+                <select asp-for="IdDepartment" class="form-control" asp-items="ViewBag.IdDepartment"></select>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Deleted" class="control-label"></label>
+                <input asp-for="Deleted" class="form-control" />
+                <span asp-validation-for="Deleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Fecha de Nacimiento</label>
+                <input asp-for="Birthdate" class="form-control" />
+                <span asp-validation-for="Birthdate" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdUser" class="control-label"></label>
+                <input asp-for="IdUser" class="form-control" />
+                <span asp-validation-for="IdUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Correo Electrónico</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Titulos Profesionales</label>
+                <textarea asp-for="ProfessionalTitles" class="form-control"></textarea>
+                <span asp-validation-for="ProfessionalTitles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Area de Trabajo</label>
+                <select asp-for="idArea" class="form-control" asp-items="ViewBag.idArea"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Certificaciones</label>
+                <textarea asp-for="Certification" class="form-control"></textarea>
+                <span asp-validation-for="Certification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Experiencia Laboral</label>
+                <textarea asp-for="WorkExperience" class="form-control"></textarea>
+                <span asp-validation-for="WorkExperience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Dirección</label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" value="1" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Contraseña</label>
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" class="form-control" />
+                <span id="passwordError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Postular" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+<script>
+    // JavaScript para verificar que las contraseñas coincidan
+    const passwordField = document.querySelector('input[name="Password"]');
+    const confirmPasswordField = document.getElementById('confirmPassword');
+    const passwordError = document.getElementById('passwordError');
+
+    confirmPasswordField.addEventListener('input', () => {
+        if (passwordField.value !== confirmPasswordField.value) {
+            passwordError.textContent = 'Las contraseñas no coinciden';
+        } else {
+            passwordError.textContent = '';
+        }
+    });
+</script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+

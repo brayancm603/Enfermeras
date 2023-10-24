@@ -1,0 +1,73 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Servicios</h1>
+
+<a asp-controller="PagoQrs" asp-action="Index" class="btn btn-success">QR Pagar Servicio</a>|
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>
+                <i class="fa fa-window-maximize" style="color: black;"></i>
+                Problema
+                <span class="visually-hidden">(current)</span>
+            </th>
+            <th>
+                <i class="fa fa-calendar-o" style="color: black;"></i>
+                Fecha para el servicio
+                <span class="visually-hidden">(current)</span>
+            </th>
+            <th>
+                <i class="fa fa-user" style="color: black;"></i>
+                Estado
+                <span class="visually-hidden">(current)</span>
+            </th>
+            <th>
+                <i class="fa fa-user" style="color: black;"></i>
+                Califica!!
+                <span class="visually-hidden">(current)</span>
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <button disabled class="btn btn-success">
+                        @Service.ReturnToStatus((int)item.Status)
+                        
+                    </button>
+                </td>
+                @if (item.Status_Service == 2 && item.Commented == null)
+                {
+                    <td>
+                        <a class="btn btn-info" asp-action="Create" asp-controller="Rating" asp-route-id="@item.IdService">Comentar</a>
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

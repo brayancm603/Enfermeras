@@ -1,0 +1,61 @@
+﻿@model List<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Servicios Finalizados</h1>
+@if (TempData.ContainsKey("ErrorMessage"))
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                <i class="fa fa-user" style="color: black;"></i>
+                Profecional Encargado
+                <span class="visually-hidden">(current)</span>
+            </th>
+            <th>
+                <i class="fa fa-window-maximize" style="color: black;"></i>
+                Problema
+                <span class="visually-hidden">(current)</span>
+            </th>
+            <th>
+                <i class="fa fa-calendar-check-o" style="color: black;"></i>
+                Fecha Finalizacion
+                <span class="visually-hidden">(current)</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdProfessional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateTime_Off_Service)
+                </td>
+                <td>
+                    <button disabled class="btn btn-success">
+                        @Service.ReturnToStatus((int)item.Status)
+
+                    </button>
+                    <a asp-controller="Images" asp-action="DetailsImage" asp-route-id="@item.IdService" class="btn btn-success" style="margin-left:5px;">
+                         <i class="fa fa-file-image-o" style="color: #FFFFFF;"></i>
+                         <span class="visually-hidden">(current)</span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
