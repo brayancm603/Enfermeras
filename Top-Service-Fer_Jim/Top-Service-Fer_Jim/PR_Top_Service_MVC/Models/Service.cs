@@ -10,7 +10,7 @@ namespace PR_Top_Service_MVC.Models
         Aceptado,
         En_Proceso,
     }
-    public partial class Service
+    public partial class Service 
     {
 
         public static string ReturnToStatus(int num)
@@ -40,6 +40,7 @@ namespace PR_Top_Service_MVC.Models
         public virtual Profesional? IdProfessionalNavigation { get; set; } = null!;
         public virtual Costumer? IdCostumerNavigation { get; set; } = null!;
         public virtual Receipt? Receipt { get; set; }
-        
+        public virtual ICollection<Image> Images { get; set; } = new List<Image>();
+
     }
 }

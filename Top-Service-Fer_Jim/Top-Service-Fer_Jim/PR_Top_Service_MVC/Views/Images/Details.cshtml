@@ -1,0 +1,30 @@
+﻿@model PR_Top_Service_MVC.Models.Image
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Image</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Imaged)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Imaged)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdServiceNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdServiceNavigation.IdService)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdImages">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

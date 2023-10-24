@@ -1,0 +1,30 @@
+﻿@model PR_Top_Service_MVC.Models.PagoQr
+
+@if (User.IsInRole("SuperAdmin"))
+{
+    <div align="center">
+        <form asp-action="Cargar" class="form-group" method="post" enctype="multipart/form-data">
+            <div>
+                <br />
+                <label id="Image"> Seleccione nuevo <b>QR</b> de pago</label>
+                <br />
+                <input class="form-control" name="image" type="file" value="Seleccionar Imagen" accept="image/*" required />
+                <br />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+}
+
+<div align="center">
+    <h1 style="font-size:50; margin-left:300; font-family: Arial">Pago Qr</h1>
+
+    @if (Model != null && !string.IsNullOrEmpty(Model.ImageQr))
+    {
+        <img src="@Model.ImageQr" style="height:250px; width:250px ; margin-top:100px" align="center" />
+    }
+    else
+    {
+        <p>No hay QR</p>
+    }
+</div>
