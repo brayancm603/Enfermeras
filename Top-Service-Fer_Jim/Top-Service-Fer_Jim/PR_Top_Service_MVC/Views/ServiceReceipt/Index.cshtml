@@ -10,12 +10,15 @@
         <tr>
 
             <th>
+                <i class="fa fa-graduation-cap" style="color: black;"></i>
                 Profesional Encargado
             </th>
             <th>
+                <i class="fa fa-file-text-o" style="color: black;"></i>
                 Descripcion del problema
             </th>
             <th>
+                <i class="fa fa-calendar-o" style="color: black;"></i>
                 Fecha para inciar el servicio
             </th>
            
@@ -39,8 +42,7 @@
            
            
                 <td>
-                    <a asp-action="EditService" asp-controller="ServiceReceipt" asp-route-id="@item.IdService">Confirmar servicio</a> |
-
+                    <a asp-action="EditService" asp-controller="ServiceReceipt" asp-route-id="@item.IdService" class="btn btn-success">Confirmar servicio</a> |
                 </td>
         </tr>
 }

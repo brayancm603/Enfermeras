@@ -10,10 +10,19 @@
 <table class="table table-striped" style=" overflow-x: auto;">
     <thead>
         <tr>
-            <th>Descripcion</th>
-            <th>Fecha</th>
-            <th>Fecha de Inicio</th>
-            
+            <th>
+                <i class="fa fa-file-text-o" style="color: black;"></i>
+                Descripcion
+            </th>
+            <th>
+                <i class="fa fa-calendar-o" style="color: black;"></i>
+                Fecha
+            </th>
+            <th>
+                <i class="fa fa-calendar-check-o" style="color: black;"></i>
+                Fecha de Inicio
+            </th>
+
             <th hidden>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
@@ -51,7 +60,7 @@
         @foreach (var item in Model)
         {
             <tr>
-               
+
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
@@ -64,7 +73,7 @@
                 <td hidden>
                     @Html.DisplayFor(modelItem => item.Status_Service)
                 </td>
-                <td >
+                <td>
                     @Html.DisplayFor(modelItem => item.DateTime_On_Service)
                 </td>
                 <td hidden>
@@ -82,7 +91,7 @@
                 <td hidden>
                     @Html.DisplayFor(modelItem => item.ProfesionalS.IdProfesional)
                 </td>
-                @if (item.Status_Service==null)
+                @if (item.Status_Service == null)
                 {
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.IdService">Empezar</a>
