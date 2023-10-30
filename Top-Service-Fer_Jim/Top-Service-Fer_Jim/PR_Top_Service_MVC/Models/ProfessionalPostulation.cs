@@ -26,7 +26,7 @@ namespace PR_Top_Service_MVC.Models
         public int IdUser { get; set; }
         public string Email { get; set; } = null!;
         public string? Password { get; set; } = null!;
-        public string Role { get; set; } = null!;
+        public string? Role { get; set; } = null!;
 
         //DAtos de Postulacion
         public int IdPostulation { get; set; }

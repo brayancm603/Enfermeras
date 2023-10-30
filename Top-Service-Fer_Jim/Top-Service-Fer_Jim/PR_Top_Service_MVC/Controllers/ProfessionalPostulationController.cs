@@ -54,6 +54,14 @@ namespace PR_Top_Service_MVC.Controllers
                 pos.idArea = p.idArea;
                 _context.Add(pos);
                 await _context.SaveChangesAsync();
+
+                User user = new User();
+                user.IdUser = per.IdPerson;
+                user.Email = p.Email;
+
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
                 await transaction.CommitAsync();
                 ViewData["idArea"] = new SelectList(_context.JobArea, "idArea", "Name", p.idArea);
                 ViewData["IdDepartment"] = new SelectList(_context.Departments, "IdDepartment", "Name", p.IdDepartment);
