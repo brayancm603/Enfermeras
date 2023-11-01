@@ -9,6 +9,7 @@ namespace PR_Top_Service_MVC.Models
         public string ProfessionalTitles { get; set; } = null!;
         public string Certification { get; set; } = null!;
         public string WorkExperience { get; set; } = null!;
+        public string? Image { get; set; } = null!;
         public DateTime Date { get; set; }
         public string Address { get; set; } = null!;
         public byte Status { get; set; }

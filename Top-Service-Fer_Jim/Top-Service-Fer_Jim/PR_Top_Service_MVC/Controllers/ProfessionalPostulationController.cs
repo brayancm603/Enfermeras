@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Firebase.Auth;
+using Firebase.Storage;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PR_Top_Service_MVC.Models;
 
@@ -21,8 +23,12 @@ namespace PR_Top_Service_MVC.Controllers
             return View();
         }
 
-        public async Task<IActionResult> CreateProfessionalPostulation(ProfessionalPostulation p)
+        [HttpPost]
+
+        public async Task<IActionResult> CreateProfessionalPostulation(ProfessionalPostulation p, IFormFile image)
         {
+            Stream imagen = image.OpenReadStream();
+            string urlImagen = await SubirStorage(imagen, image.FileName);
             using var transaction = await _context.Database.BeginTransactionAsync();
             try
             {
@@ -45,6 +51,7 @@ namespace PR_Top_Service_MVC.Controllers
 
                 Postulation pos = new Postulation();
                 pos.WorkExperience = p.WorkExperience;
+                pos.Image = urlImagen;
                 pos.Date = p.Date;
                 pos.Address = p.Address;
                 pos.Status = 1;
@@ -55,7 +62,7 @@ namespace PR_Top_Service_MVC.Controllers
                 _context.Add(pos);
                 await _context.SaveChangesAsync();
 
-                User user = new User();
+                Models.User user = new Models.User();
                 user.IdUser = per.IdPerson;
                 user.Email = p.Email;
 
@@ -68,15 +75,41 @@ namespace PR_Top_Service_MVC.Controllers
                 return RedirectToAction("Index", "Home");
 
             }
-            catch(Exception ex)
+            catch(Exception)
             {
 
                 await transaction.RollbackAsync();
                 return RedirectToAction("Error","Home");
                
             }
+        }
 
-            return RedirectToAction("Index", "Home");
+        public async Task<string> SubirStorage(Stream archivo, string nombre)
+        {
+            string email = "topServices@gmail.com";
+            string clave = "topServicesB123";
+            string ruta = "topservicesprueba.appspot.com";
+            string api_key = "AIzaSyA1w6Jv3AfD5ihWKA-pvW_fn64Ds5PdkXo";
+
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(api_key));
+            var a = await authProvider.SignInWithEmailAndPasswordAsync(email, clave);
+
+            var authToken = a.FirebaseToken;
+
+            var cancellation = new CancellationTokenSource();
+
+            var task = new FirebaseStorage(
+                ruta,
+                new FirebaseStorageOptions
+                {
+                    AuthTokenAsyncFactory = () => Task.FromResult(authToken),
+                    ThrowOnCancel = true
+                }
+                )
+                .Child("Fotos_CV").Child(nombre).PutAsync(archivo, cancellation.Token);
+            var dowloadURL = await task;
+
+            return dowloadURL;
         }
     }
 }

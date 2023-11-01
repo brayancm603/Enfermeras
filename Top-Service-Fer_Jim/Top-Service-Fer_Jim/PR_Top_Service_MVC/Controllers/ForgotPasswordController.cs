@@ -46,8 +46,6 @@ namespace PR_Top_Service_MVC.Controllers
             {
                 return Redirect("/Home/Error");
             }
-
-            return View();
         }
     }
 }

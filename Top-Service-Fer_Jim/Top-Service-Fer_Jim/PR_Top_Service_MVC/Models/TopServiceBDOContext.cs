@@ -263,6 +263,9 @@ namespace PR_Top_Service_MVC.Models
                 entity.Property(e => e.WorkExperience)
                   .HasMaxLength(150)
                   .IsUnicode(false);
+                entity.Property(e => e.Image)
+                 .HasMaxLength(500)
+                 .IsUnicode(false);
 
                 entity.Property(e => e.idArea).HasColumnName("id_Area");
                 entity.Property(e => e.IdProfessional).HasColumnName("Id_Professional");
