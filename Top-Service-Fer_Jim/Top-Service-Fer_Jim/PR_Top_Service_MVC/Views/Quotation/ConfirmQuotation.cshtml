@@ -35,7 +35,10 @@
                     <i class="fa fa-file-text-o" style="color: black;"></i>
                     Descripcion del problema
                 </th>
-
+                <th>
+                    <i class="fa fa-picture-o " style="color: black;"></i>
+                    Problema
+                </th>
 
                 <th></th>
             </tr>
@@ -62,6 +65,16 @@
 
                     <td>
                         @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.Image))
+                        {
+                            <img src="@item.Image" width="200" height="200" />
+                        }
+                        else
+                        {
+                            <p>No hay imagen</p>
+                        }
                     </td>
 
 

@@ -54,6 +54,10 @@
                          <i class="fa fa-file-image-o" style="color: #FFFFFF;"></i>
                          <span class="visually-hidden">(current)</span>
                     </a>
+                    <a asp-action="Detail" asp-controller="PagoQrs" asp-route-id="@item.IdService" class="btn btn-success">
+                        <i class="fa fa-qrcode" style="color: #FFFFFF;"></i>
+                        <span class="visually-hidden">(current)</span>
+                    </a>
                 </td>
             </tr>
         }

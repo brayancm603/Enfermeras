@@ -7,5 +7,6 @@ namespace PR_Top_Service_MVC.Models
         [Key]
         public int id { get; set; }
         public string ImageQr { get; set; }
+
     }
 }

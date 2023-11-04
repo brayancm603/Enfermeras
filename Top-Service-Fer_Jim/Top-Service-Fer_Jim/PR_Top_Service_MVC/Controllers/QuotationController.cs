@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using PR_Top_Service_MVC.Models;
 using PR_Top_Service_MVC.Controllers;
 using Microsoft.AspNetCore.Authorization;
+using Firebase.Auth;
+using Firebase.Storage;
 
 namespace PR_Top_Service_MVC.Controllers
 {
@@ -91,15 +93,15 @@ namespace PR_Top_Service_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(int id ,[Bind("IdQuotation,IdCostumer,IdProfesional,Date,Description,Status")] Quotation quotation)
+        public async Task<IActionResult> Create(int id ,[Bind("IdQuotation,IdCostumer,IdProfesional,Date,Description,Status")] Quotation quotation, IFormFile image)
         {
+            Stream imagen = image.OpenReadStream();
+            string urlImagen = await SubirStorage(imagen, image.FileName);
             if (ModelState.IsValid)
             {
                 quotation.IdProfesional = id;
                 quotation.IdCostumer = UserConfig.userLogin.IdUser;
-              
-
-
+                quotation.Image = urlImagen;
                 _context.Add(quotation);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index" , "JobArea");
@@ -238,6 +240,33 @@ namespace PR_Top_Service_MVC.Controllers
         private bool QuotationExists(int id)
         {
           return (_context.Quotations?.Any(e => e.IdQuotation == id)).GetValueOrDefault();
+        }
+        public async Task<string> SubirStorage(Stream archivo, string nombre)
+        {
+            string email = "topServices@gmail.com";
+            string clave = "topServicesB123";
+            string ruta = "topservicesprueba.appspot.com";
+            string api_key = "AIzaSyA1w6Jv3AfD5ihWKA-pvW_fn64Ds5PdkXo";
+
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(api_key));
+            var a = await authProvider.SignInWithEmailAndPasswordAsync(email, clave);
+
+            var authToken = a.FirebaseToken;
+
+            var cancellation = new CancellationTokenSource();
+
+            var task = new FirebaseStorage(
+                ruta,
+                new FirebaseStorageOptions
+                {
+                    AuthTokenAsyncFactory = () => Task.FromResult(authToken),
+                    ThrowOnCancel = true
+                }
+                )
+                .Child("Fotos_Solicitud").Child(nombre).PutAsync(archivo, cancellation.Token);
+            var dowloadURL = await task;
+
+            return dowloadURL;
         }
     }
 }

@@ -2,6 +2,7 @@
 using Firebase.Storage;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PR_Top_Service_MVC.Models;
 
 namespace PR_Top_Service_MVC.Controllers
@@ -21,6 +22,14 @@ namespace PR_Top_Service_MVC.Controllers
             return View(ultimoPagoQr);
         }
 
+        public IActionResult Detail(int id)
+        {
+            var totalA = _context.Receipts.Where(x => x.IdReceipt == id);
+            ViewBag.Total = totalA.First().Total.ToString();
+            var pagoQr = _context.PagoQRs.OrderByDescending(p => p.id).FirstOrDefault();
+            return View(pagoQr);
+
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]

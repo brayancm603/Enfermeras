@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace PR_Top_Service_MVC.Models
 {
@@ -11,6 +12,7 @@ namespace PR_Top_Service_MVC.Models
         public DateTime Date { get; set; }
     
         public string Description { get; set; } = null!;
+        public string? Image { get; set; } = null!;
         public byte Status { get; set; }
         public virtual Costumer? IdCostumerNavigation { get; set; } = null!;
         public virtual Profesional? IdProfesionalNavigation { get; set; } = null!;
