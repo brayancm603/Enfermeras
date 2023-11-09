@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\PR_Top_Service_MVC.props" />
-</Project>
