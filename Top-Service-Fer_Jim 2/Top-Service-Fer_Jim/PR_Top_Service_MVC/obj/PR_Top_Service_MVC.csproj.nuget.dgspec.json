@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 3\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
+    "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
   },
   "projects": {
-    "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 3\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
+    "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 3\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "projectUniqueName": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
         "projectName": "PR_Top_Service_MVC",
-        "projectPath": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 3\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "projectPath": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 3\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\obj\\",
+        "outputPath": "D:\\Univalle\\Carpeta Sexto Semestre\\Proyecto de Sistemas\\Unidad 1\\Enfermeras\\Top-Service-Fer_Jim 2\\Top-Service-Fer_Jim\\PR_Top_Service_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
