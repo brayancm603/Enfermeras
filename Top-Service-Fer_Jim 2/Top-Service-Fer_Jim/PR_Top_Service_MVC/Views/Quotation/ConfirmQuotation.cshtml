@@ -1,0 +1,170 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Quotation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Solicitudes de Cotizacion Pendientes</h1>
+
+<div class="tabla-contenedor">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Nombre
+                </th>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Apellido Paterno
+                </th>
+                <th>
+                    <i class="fa fa-user-o" style="color: black;"></i>
+                    Apellido Materno
+                </th>
+                <th>
+                    <i class="fa fa-map-marker" style="color: black;"></i>
+                    Ubicacion
+                </th>
+                <th>
+                    <i class="fa fa-map-marker" style="color: black;"></i>
+                    Numero de Celular
+                </th>
+                <th>
+                    <i class="fa fa-calendar-o" style="color: black;"></i>
+                    Fecha de solicitud
+                </th>
+
+                <th>
+                    <i class="fa fa-file-text-o" style="color: black;"></i>
+                    Descripcion del problema
+                </th>
+                <th>
+                    <i class="fa fa-picture-o " style="color: black;"></i>
+                    Problema
+                </th>
+                <th>
+                    <i class="fa fa-map-marker  " style="color: black;"></i>
+                    Ubicacion
+                </th>
+                <th>
+                    
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumerNavigation.SecondLastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCostumerNavigation.CellphoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+
+                        <button class="btn btn-info" id="openImageModal" data-image-url="@item.Image">Ver imagen </button>
+                        
+                    </td>
+
+                    <td>
+                        <a  asp-route-id="@item.IdCostumerNavigation.IdCostumer" class="btn btn-info"
+                           data-latitude="@item.IdCostumerNavigation.Latitude"
+                           data-longitude="@item.IdCostumerNavigation.Longitud"
+                           onclick="openMapPopup(this)">Ver ubicación</a>
+                       
+
+                    </td>
+                    <td>
+                        <a asp-action="Accept" asp-route-id="@item.IdQuotation" class="btn btn-success">Aceptar</a> 
+                        <a asp-action="Reject" asp-route-id="@item.IdQuotation" class="btn btn-danger">Rechazar</a> 
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div id="map-popup" style="display: none; position: fixed; top: 15%; left: 15%; width: 70%; height: 70%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999;">
+    <div id="map" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; max-width: 100%; max-height: 100%;">
+        <button id="close-map-button" class="btn btn-danger" onclick="closeMapPopup()" style="position: absolute; top: 10px; right: 10px; z-index: 10000;">X</button>
+    </div>
+</div>
+<div id="imageModal">
+    <span id="closeModal">&times;</span>
+    <img id="modalContent" src="" />
+</div>
+
+
+<script>
+    // Obtener el botón y la ventana modal
+    var openModalButton = document.getElementById("openImageModal");
+    var modal = document.getElementById("imageModal");
+    var image = document.querySelector("#modalContent");
+
+    openModalButton.addEventListener("click", function () {
+        var imageUrl = openModalButton.getAttribute("data-image-url");
+        image.src = imageUrl;
+        modal.style.display = "block";
+    });
+
+    // Cuando se haga clic en la "x", cerrar la ventana modal
+    var closeModalButton = document.getElementById("closeModal");
+    closeModalButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // También puedes cerrar la ventana modal haciendo clic fuera de la imagen
+    window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    function openMapPopup(button) {
+        var latitude = button.getAttribute("data-latitude");
+        var longitude = button.getAttribute("data-longitude");
+
+        event.preventDefault();
+
+        document.getElementById("map-popup").style.display = "block";
+
+        var map = L.map('map').setView([parseFloat(latitude), parseFloat(longitude)], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+        }).addTo(map);
+
+        L.marker([parseFloat(latitude), parseFloat(longitude)]).addTo(map);
+    }
+
+    function closeMapPopup() {
+        document.getElementById("map-popup").style.display = "none";
+    }
+</script>
