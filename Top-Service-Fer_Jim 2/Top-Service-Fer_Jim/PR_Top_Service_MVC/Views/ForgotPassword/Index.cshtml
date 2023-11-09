@@ -1,0 +1,92 @@
+﻿@model PR_Top_Service_MVC.Models.User
+
+<div class="container-fluid vh-80 d-flex justify-content-center align-items-center">
+    <div class="card text-center" style="width: 400px;">
+        <div class="card-header h5 text-white bg-primary">Password Reset</div>
+        <div class="card-body px-5">
+            <p class="card-text py-2">
+                Ingrese su dirección de correo electrónico y le enviaremos un correo electrónico con su contraseña temporal.
+            </p>
+            <div class="form-outline">
+                <input type="email" id="typeEmail" class="form-control my-3" required="" />
+            </div>
+
+            <button type="button" class="btn btn-primary w-100" id="sendMailButton">Enviar Código de Verificación</button>
+            <div id="messageDiv"></div>
+            <div class="d-flex justify-content-between mt-4">
+                <a class="" asp-controller="Login" asp-action="Index">Login</a>
+                <a class="" href="#">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid vh-80 d-flex justify-content-center align-items-center">
+    <div id="verificationForm">
+        <input type="hidden" id="verificationCodeValue" />
+        <form asp-action="VerifyCode" method="post">
+            <div class="form-outline">
+                <label class="control-label"> Ingrese el codigo que le llego a la direccion de correo electronico que proporciono.</label>
+                <input type="text" id="verificationCode" class="form-control my-3" required="" name="verificationCode" />
+            </div>
+            <button type="button" class="btn btn-primary w-100" id="verifyCodeButton" disabled>Verificar Código</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(function () {
+        $("#sendMailButton").click(function () {
+            var email = $("#typeEmail").val();
+            var random = Math.floor(Math.random() * (100000 - 10000) + 10000); // Genera un número aleatorio de 5 dígitos
+
+            // Desactiva el botón después de hacer clic
+            $(this).prop('disabled', true);
+
+            $.ajax({
+                url: "/ForgotPassword/SendMail", // Ruta a tu acción SendMail
+                type: "POST",
+                data: { typeEmail: email, randomCode: random },
+                success: function () {
+                    // Habilita el botón "Verificar Código" después de enviar el correo
+                    $("#verificationCodeValue").val(random);
+                    $("#verifyCodeButton").prop("disabled", false);
+                    $("#messageDiv").html("Correo enviado exitosamente");
+                },
+                error: function () {
+                    $("#messageDiv").html("Error al enviar el correo");
+                }
+            });
+        });
+
+        $("#verifyCodeButton").click(function () {
+            var enteredCode = $("#verificationCode").val();
+            var storedCode = $("#verificationCodeValue").val();
+
+            if (enteredCode === storedCode) {
+                // Realiza la consulta para obtener el ID del usuario
+                var email = $("#typeEmail").val();
+                $.ajax({
+                    url: "/ForgotPassword/GetUserIdByEmail", // Ruta a la acción que obtiene el ID por correo electrónico
+                    type: "POST",
+                    data: { email: email },
+                    success: function (userId) {
+                        if (userId) {
+                            // Redirige al usuario a la página de actualización de contraseña con el ID
+                            window.location.href = "/ForgotPassword/UpdatePasswordForgot/" + userId;
+                        } else {
+                            alert("No se encontró el usuario. Realiza una acción adecuada.");
+                        }
+                    },
+                    error: function () {
+                        alert("Error al obtener el ID del usuario.");
+                    }
+                });
+            } else {
+                alert("Código incorrecto. Por favor, inténtelo de nuevo.");
+            }
+        });
+    });
+
+</script>

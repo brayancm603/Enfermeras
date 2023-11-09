@@ -1,0 +1,74 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Postulation>
+
+<h1>Postulaciones pendientes</h1>
+
+@if (TempData["NoDataMessage"] != null)
+{
+    <p class="alert alert-danger">@TempData["NoDataMessage"]</p>
+}
+else
+{
+    <div class="tabla-contenedor">
+        <table class="table table-striped" style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>
+                        <i class="fa fa-user" style="color: black;"></i>
+                        Titulos Profesionales
+                    </th>
+                    <th>
+                        <i class="fa fa-graduation-cap" style="color: black;"></i>
+                        Certificaciones
+                    </th>
+                    <th>
+                        <i class="fa fa-book" style="color: black;"></i>
+                        Experiencia Laboral
+                    </th>
+                    <th>
+                        <i class="fa fa-map-marker" style="color: black;"></i>
+                        Direccion
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Any())
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProfessionalTitles)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Certification)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.WorkExperience)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Address)
+                            </td>
+                            <td>
+                                <a asp-action="ViewPostulation" asp-route-id="@item.IdPostulation" class="btn btn-success">
+                                    <i class="fa fa-eye" style="color: #FFFFFF;"></i>
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5">No se encontraron postulaciones pendientes.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<br />
+<br />
+<br />
