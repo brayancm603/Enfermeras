@@ -1,0 +1,36 @@
+﻿@model PR_Top_Service_MVC.Models.PagoQr
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detalles</h1>
+<div class="container">
+    <table class="table tabla-contenedor">
+        <thead>
+            <tr>
+                <th>Monto a pagar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Total: @ViewBag.Total</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div align="center">
+    <h1 style="font-size:50; margin-left:300; font-family: Arial">Pago <i class="fa fa-qrcode" style="color: #000000;"></i></h1>
+
+    @if (Model != null && !string.IsNullOrEmpty(Model.ImageQr))
+    {
+        <img src="@Model.ImageQr" style="max-width: 250px; max-height: 250px; margin-top:100px" align="center" />
+    }
+    else
+    {
+        <p>No hay QR</p>
+    }
+</div>
+

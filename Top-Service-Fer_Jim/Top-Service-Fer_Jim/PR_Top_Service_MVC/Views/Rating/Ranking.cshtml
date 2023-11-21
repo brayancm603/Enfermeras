@@ -1,0 +1,69 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Ranking>
+
+<h1>Ranking de Profesionales</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre del Profesional</th>
+            <th>Promedio de Calificaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Nombre
+                    @item.Apellido
+                </td>
+                <td>
+                    @if (item.PromedioRating > 0 && item.PromedioRating < 2)
+                    {
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    }
+                    else if (item.PromedioRating >= 2 && item.PromedioRating < 3)
+                    {
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    }
+                    else if (item.PromedioRating >= 3 && item.PromedioRating < 4)
+                    {
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    }
+                    else if (item.PromedioRating >= 4 && item.PromedioRating < 5)
+                    {
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    }
+                    else if (item.PromedioRating >= 5)
+                    {
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    }
+
+                </td>
+                <td>
+                    <a class="btn btn-success" asp-action="Comments" asp-controller="Rating" asp-route-id="@item.IdProfessional">Ver Comentarios</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

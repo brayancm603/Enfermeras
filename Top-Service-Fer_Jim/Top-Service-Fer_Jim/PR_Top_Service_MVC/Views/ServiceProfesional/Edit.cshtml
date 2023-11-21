@@ -1,0 +1,148 @@
+﻿@model PR_Top_Service_MVC.Models.Service
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="mt-4">Aceptar</h1>
+
+<h4>Servicio</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdService" />
+
+            <div class="form-group row">
+                <label asp-for="Description" class="col-sm-3 control-label"><strong>Descripción:</strong></label>
+                <div class="col-sm-9">
+                    <p class="form-control-static">@Model.Description</p>
+                    <input asp-for="Description" class="form-control" hidden />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="Date" class="col-sm-3 control-label"><strong>Fecha:</strong></label>
+                <div class="col-sm-9">
+                    <p class="form-control-static">@Model.Date</p>
+                    <input asp-for="Date" class="form-control" hidden />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="IdAdmin" class="col-sm-3 control-label" hidden></label>
+                <div class="col-sm-9" hidden>
+                    <select asp-for="IdAdmin" class="form-control" asp-items="ViewBag.IdAdmin"></select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="IdProfessional" class="col-sm-3 control-label" hidden></label>
+                <div class="col-sm-9" hidden>
+                    <select asp-for="IdProfessional" class="form-control" asp-items="ViewBag.IdProfessional"></select>
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="Status" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="Status" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="Status_Service" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="Status_Service" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="DateTime_On_Service" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="DateTime_On_Service" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="DateTime_Off_Service" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="DateTime_Off_Service" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="Latitude" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="Latitude" class="form-control" id="latitude" />
+                </div>
+            </div>
+
+            <div class="form-group row" hidden>
+                <label asp-for="Longitude" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9">
+                    <input asp-for="Longitude" class="form-control" id="longitude" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="IdCostumer" class="col-sm-3 control-label" hidden></label>
+                <div class="col-sm-9" hidden>
+                    <select asp-for="IdCostumer" class="form-control" asp-items="ViewBag.IdCostumer"></select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.getElementById("latitude").value = latitude;
+            document.getElementById("longitude").value = longitude;
+            console.log(document.getElementById("latitude"));
+            console.log(document.getElementById("longitude"));
+
+            console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+
+
+            //aquí puedes hacer lo que quieras con la latitud y longitud, como enviarla al servidor mediante una llamada AJAX.
+        }
+        function submitForm() {
+            var requiredValue = document.getElementById("latitude").value;
+            if (requiredValue == null || requiredValue.trim() === "") {
+                var errorMessage = "Debe Autorizar el uso de su ubicacion";
+                document.getElementById("errorMessage").innerHTML = errorMessage;
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        getLocation()
+        
+    </script>
+}
+
+    
+
