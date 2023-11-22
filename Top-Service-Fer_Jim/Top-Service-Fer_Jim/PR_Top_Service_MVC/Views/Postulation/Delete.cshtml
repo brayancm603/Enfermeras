@@ -1,0 +1,22 @@
+﻿@model PR_Top_Service_MVC.Models.Postulation
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Eliminar</h1>
+
+<h3>Estas seguro de eliminar este registro?</h3>
+<div>
+    <h4>Postulacion</h4>
+    <hr />
+    <dl class="row">
+       
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdPostulation" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver</a>
+    </form>
+</div>

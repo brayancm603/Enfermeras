@@ -1,0 +1,224 @@
+﻿@model PR_Top_Service_MVC.Models.CustomerUser
+
+@{
+    ViewData["Title"] = "Regitro";
+}
+<h1>Registro de Usuarios</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" id="registrationForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Primer Apellido</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Segundo Apellido</label>
+                <input asp-for="SecondLastName" class="form-control" />
+                <span asp-validation-for="SecondLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Dirección</label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Carnet de Identidad</label>
+                <input asp-for="Ci" class="form-control" />
+                <span asp-validation-for="Ci" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Numero de Celular</label>
+                <input asp-for="CellphoneNumber" class="form-control" />
+                <span asp-validation-for="CellphoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdPerson" class="control-label"></label>
+                <input asp-for="IdPerson" class="form-control" />
+                <span asp-validation-for="IdPerson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Departamento</label>
+                <select asp-for="IdDepartment" class="form-control" asp-items="ViewBag.IdDepartment"></select>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" value=1 />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdUser" class="control-label"></label>
+                <input asp-for="IdUser" class="form-control" />
+                <span asp-validation-for="IdUser" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" id="Latitude" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Longitud" class="control-label"></label>
+                <input asp-for="Longitud" class="form-control" id="Longitude" />
+                <span asp-validation-for="Longitud" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Correo Electrónico</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Contraseña</label>
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" class="form-control" />
+                <span id="passwordError" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" value="Client" />
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="Buscar ubicación" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" type="button" id="search-button">Buscar</button>
+                    </span>
+                </div>
+            </div>
+
+            <label class="control-label">Seleccione su ubicacion(Debe presionar 2 veces sobre el mapa)</label>
+            <div id="map"></div>
+            <br />
+            <div class="form-group">
+                <button type="submit" value="Create" class="btn btn-primary">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // JavaScript para verificar que las contraseñas coincidan
+    const passwordField = document.querySelector('input[name="Password"]');
+    const confirmPasswordField = document.getElementById('confirmPassword');
+    const passwordError = document.getElementById('passwordError');
+
+    confirmPasswordField.addEventListener('input', () => {
+        if (passwordField.value !== confirmPasswordField.value) {
+            passwordError.textContent = 'Las contraseñas no coinciden';
+        } else {
+            passwordError.textContent = '';
+        }
+    });
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    var mapa;
+    var marcador;
+
+    function initMap() {
+        mapa = L.map('map').setView([-17.3866329, -66.2418649], 6);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+        }).addTo(mapa);
+
+        marcador = L.marker([-17.3866329, -66.2418649], { draggable: true, opacity: 0 }).addTo(mapa);
+
+        var primerDblClick = true;
+
+        mapa.on('dblclick', function (e) {
+            var latitud = e.latlng.lat;
+            var longitud = e.latlng.lng;
+            document.getElementById("Latitude").value = latitud;
+            document.getElementById("Longitude").value = longitud;
+
+            if (primerDblClick) {
+                marcador.setLatLng([latitud, longitud]);
+                marcador.setOpacity(1);
+                primerDblClick = false;
+            } else {
+                marcador.setLatLng([latitud, longitud]);
+            }
+        });
+
+        // Agregar el cuadro de búsqueda
+        var searchControl = L.control();
+
+        searchControl.onAdd = function (map) {
+            var container = L.DomUtil.create('div', 'search-container');
+            //container.innerHTML = '<input type="text" id="search-input" placeholder="Buscar ubicación" /><button id="search-button">Buscar</button>';
+            return container;
+        };
+
+        searchControl.addTo(mapa);
+
+        // Agregar la funcionalidad de búsqueda
+        document.getElementById("search-button").addEventListener("click", function () {
+            var query = document.getElementById("search-input").value;
+            searchLocation(query);
+        });
+    }
+
+    function searchLocation(query) {
+        // Especifica el código de país en la consulta (en este ejemplo, 'BO' para Bolivia)
+        var countryCode = 'BO';
+
+        fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}&countrycodes=${countryCode}`)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                if (data.length > 0) {
+                    var lat = parseFloat(data[0].lat);
+                    var lon = parseFloat(data[0].lon);
+                    mapa.setView([lat, lon], 12);
+                    marcador.setLatLng([lat, lon]);
+                    document.getElementById("Latitude").value = lat;
+                    document.getElementById("Longitude").value = lon;
+                } else {
+                    alert("Ubicación no encontrada");
+                }
+            });
+    }
+
+
+</script>
+
+<script>
+    window.onload = function () {
+        initMap();
+    };
+</script>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+

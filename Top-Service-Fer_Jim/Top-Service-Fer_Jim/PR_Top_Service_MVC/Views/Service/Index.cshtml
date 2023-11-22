@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Servicios</h1>
+
+<a asp-controller="PagoQrs" asp-action="Index" class="btn btn-success">QR Pagar Servicio</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                <i class="fa fa-graduation-cap" style="color: black;"></i>
+                Profesional Encargado
+            </th>
+            <th>
+                <i class="fa fa-file-text-o" style="color: black;"></i>
+                Descripcion del problema
+            </th>
+            <th>
+                <i class="fa fa-calendar-o" style="color: black;"></i>
+                Fecha para el servicio
+            </th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfesionalS.IdPersonNavigation.Name)
+                    @Html.DisplayFor(modelItem => item.ProfesionalS.IdPersonNavigation.LastName)
+                    @Html.DisplayFor(modelItem => item.ProfesionalS.IdPersonNavigation.SecondLastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdService">
+                        <i class="fa fa-pencil-square-o fa-l" style="color: #6AC9AA;"></i>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.IdService">
+                        <i class="fa fa-trash-o fa-l" style="color: #6AC9AA;"></i>
+                    </a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
