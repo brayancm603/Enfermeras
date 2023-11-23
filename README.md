@@ -25,11 +25,14 @@ Una vez que tenga el **.bak** de la BD necesitamos restaurarlo para poder usar l
 
 ### 4. Ejecución del proyecto 
 Una vez que realize la clonación del proyecto procedemos a abrirlo y encontraremos el ejecutable del proyecto. Procedemos a abrirlo
+
 ![Ejecutador](https://github.com/brayancm603/Enfermeras/assets/90205529/3383a1b5-ce87-4e85-a2f9-0df7b19e65f7)
 
 ### 5. Depuracion del proyecto 
 Antes de realizar la corrida del proyecto necesitamos realizar los respectivos cambios a la cadena de conéxion a la base de datos, que este se encuentra en el archivo **appsettings.json**, cuando lo hábra necesitara escribir el nombre del servidor, user y contraseña correspondiente al servidor donde se encuentra la BD.
+
 ![Captura de pantalla 2023-11-23 021604](https://github.com/brayancm603/Enfermeras/assets/90205529/0c0ebc83-3c81-4f59-a6a8-68d35d07d437)
+
 Déspues de realizar la modificación procedemos a depurar el proyecto, precionando el botón de depuracion del idle de visual studio.
 
 ![Captura de pantalla 2023-11-23 021619](https://github.com/brayancm603/Enfermeras/assets/90205529/2771c4c8-ea64-4334-b38d-63513645db73)
