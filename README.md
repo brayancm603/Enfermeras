@@ -38,4 +38,4 @@ Después de realizar la modificación, procedemos a depurar el proyecto presiona
 ![Captura de pantalla 2023-11-23 021619](https://github.com/brayancm603/Enfermeras/assets/90205529/2771c4c8-ea64-4334-b38d-63513645db73)
 
 ## 6. Manual de usuaro 
-
+(https://docs.google.com/document/d/1Ye-UcdhhNGwRR-0U9gY2Ln3gwJexpRrn/edit?usp=sharing&ouid=106165037741428747352&rtpof=true&sd=true)
