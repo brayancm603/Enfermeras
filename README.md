@@ -39,3 +39,5 @@ Después de realizar la modificación, procedemos a depurar el proyecto presiona
 
 ## 6. Manual de usuario
 (https://docs.google.com/document/d/1Ye-UcdhhNGwRR-0U9gY2Ln3gwJexpRrn/edit?usp=sharing&ouid=106165037741428747352&rtpof=true&sd=true)
+## 7. Manual tecníco
+(https://docs.google.com/document/d/1XnrVNgwFEhI8XdL6Jsvl3xWZU0cvT0rU/edit?usp=sharing&ouid=106165037741428747352&rtpof=true&sd=true)
