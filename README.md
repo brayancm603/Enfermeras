@@ -43,3 +43,5 @@ Después de realizar la modificación, procedemos a depurar el proyecto presiona
 (https://docs.google.com/document/d/1XnrVNgwFEhI8XdL6Jsvl3xWZU0cvT0rU/edit?usp=sharing&ouid=106165037741428747352&rtpof=true&sd=true)
 ## 8. Imagenes de docker
 (https://univalleedu-my.sharepoint.com/personal/cmb0030178_est_univalle_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcmb0030178%5Fest%5Funivalle%5Fedu%2FDocuments%2FImagenes%20docker&ga=1)
+## 9. Video
+()
